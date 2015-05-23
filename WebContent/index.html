@@ -34,6 +34,7 @@
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/scripts.js"></script>
+<script type="text/javascript" src="js/amey.js"></script>
 <script>
 	$(document).ready(function() {
 		$('.btnBack').click(function() {
@@ -534,10 +535,71 @@
 
 							<!-- ******************** Section 5	***********************	 -->
 							<div class="tab-pane" id="panel-5">
-								<h2 class="title">Section 5</h2>
-								<button type="button" class="btn btn-primary btnBack">Back</button>
-								<button type="submit" class="btn btn-success">Submit</button>
-							</div>
+						<h2 class="title">Definitions</h2>	
+						<!-- Question line-->
+						  <label class="col-md-6 control-label" for="textarea">Q. Enter the definition for affiliates</label>
+						<br/><br/>
+						<!-- Question line ends -->
+						<!-- default text-->
+  						<div class="col-md-6">     
+  						<select id="selectbasic1" name="selectbasic" class="form-control">
+					      <option value="1">No affiliates</option>
+					      <option value="2">Has affiliates but does not share personal information</option>
+					      <option value="3">Shares with its affiliates</option>
+					    </select><br/>            
+   						<textarea readonly class="form-control" id="textarea" name="defaultText">Companies related by common ownership or control. They can be financial and nonfinancial companies.</textarea></br>
+   						<!-- deafault text ends-->
+   						<!-- input Answer text -->
+    					<textarea class="form-control" id="textarea" name="affiliateDefintionTextArea"></textarea>
+  						<!-- input Answer text ends -->
+  						
+						<!-- Question 2 line-->	
+						</br>
+						  <label  for="textarea">Q. Enter the definition for Nonaffiliates</label>
+						<br/><br/>
+						<!-- Question line ends -->
+						<!-- deafault text-->
+  						<select id="selectbasic2" name="selectbasic" class="form-control">
+					      <option value="1">Does not share with nonaffiliated third parties</option>
+					      <option value="2">Shares with nonaffiliated third parties</option>
+					    </select></br>                    
+   						<textarea readonly class="form-control" id="textarea" name="defaultText">Companies not related by common ownership or control. They can be financial and nonfinancial companies.</textarea></br>
+   						<!-- deafault text ends-->
+   						<!-- input Answer text -->
+    					<textarea class="form-control" id="textarea" name="nonAffiliateDefintionTextArea"></textarea>
+  						<!-- input Answer text ends -->
+
+  						<!-- Question 3 line-->	
+						</br>
+						  <label  for="textarea">Q. Enter the definition for Joint Marketing</label>
+						<br/><br/>
+						<!-- Question line ends -->
+						<select id="selectbasic3" name="selectbasic" class="form-control">
+					      <option value="1">Does not engage in joint marketing</option>
+					      <option value="2">Shares personal information for joint marketing</option>
+					    </select></br>     
+   						            
+						<!-- deafault text-->                    
+   						<textarea readonly class="form-control" id="textarea" name="defaultText">A formal agreement between nonaffiliated financial comapnies that together market fiancial products or services to you.</textarea></br>
+   						<!-- default text ends-->
+   						<!-- input Answer text -->
+    					<textarea class="form-control" id="textarea" name="jointMarketingDefintionTextArea"></textarea></br>
+  						<!-- input Answer text ends -->
+
+  						<label  for="textarea">Enter Other Important Information</label>(Use add more to add multiple. Don't write all information at a time)</br>
+  		                 <span>
+  		                 <div id="amey" class="col-md-10">   
+    					<textarea class="form-control" id="textarea" name="textarea"></textarea>
+    					</div>
+    					<div class="col-md-2"> <button id="singlebutton" name="singlebutton" type="button" class="btn btn-primary" onclick="addInput('amey')" >Add More</button>
+						</div>
+						</span>	
+						</br></br></br>
+  						<!-- submit button -->
+						<button type="button" class="btn btn-primary btnBack">Back</button>					
+						<button type="submit" class="btn btn-success">Submit</button>		
+						</div>
+						</div>
 							<!-- ******************** End of Section 5	***********************	 -->
 						</div>
 
