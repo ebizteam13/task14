@@ -17,7 +17,7 @@ var mydropdown = document.getElementById('selectbasic1');
 
 mydropdown.onchange = function(){
 	if(this.value==1){
-     mytextbox.innerHTML  = "name of financial institution has no affiliates";
+     mytextbox.innerHTML  = "[name of financial] institution has no affiliates";
    }
    if(this.value==2){
      mytextbox.innerHTML  = "[name of financial institution] does not share with our affiliates";
@@ -34,7 +34,7 @@ mydropdown2.onchange = function(){
      mytextbox2.innerHTML  = "[name of financial institution] does not share with nonaffiliates so they can market to you";
    }
    if(this.value==2){
-     mytextbox2.innerHTML  = "‘Nonaffiliates we share with can include [list categories of companies such as mortgage companies, insurance companies, direct marketing companies, and nonprofit organizations].";
+     mytextbox2.innerHTML  = "Nonaffiliates we share with can include [list categories of companies such as mortgage companies, insurance companies, direct marketing companies, and nonprofit organizations].";
    }
 	
 }
@@ -43,7 +43,7 @@ var mydropdown3 = document.getElementById('selectbasic3');
 
 mydropdown3.onchange = function(){
 	if(this.value==1){
-     mytextbox3.innerHTML  = "“[name of financial institution] doesn’t jointly market";
+     mytextbox3.innerHTML  = "[name of financial institution] doesn’t jointly market";
    }
    if(this.value==2){
      mytextbox3.innerHTML  = " [list categories of companies such as credit card companies]"
