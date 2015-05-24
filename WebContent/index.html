@@ -34,6 +34,7 @@
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/scripts.js"></script>
+<script type="text/javascript" src="js/check.js"> </script>
 <script>
 	$(document).ready(function() {
 		$('.btnBack').click(function() {
@@ -459,7 +460,7 @@
 
 <!-- Text input-->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="textinput">Who is providing this notice?</label>  
+  <label class="col-md-4 control-label" for="textinput">4.1 Who is providing this notice?</label>  
   <input id="textinput" name="textinput" placeholder="placeholder" style="width: 762px;" class="form-control input-md" required="" type="text">
     
   </div>
@@ -468,8 +469,8 @@
 
 <!-- Select Multiple -->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="selectmultiple">How do you collect my personal information (Select 5 options)</label>
-    <select id="selectmultiple" name="selectmultiple" class="form-control" multiple="multiple" style="width: 762px;">
+  <label class="col-md-4 control-label" for="selectmultiple">4.2 How do you collect my personal information (Select 5 options)</label>
+    <select id="selectmultiple" onfocusout="check()" name="selectmultiple" class="form-control" multiple="multiple" style="width: 762px;">
       <option value="1">open an account</option>
       <option value="2">pay your bills.</option>
       <option value="">apply for a loan.</option>
@@ -512,10 +513,19 @@
 
 
 
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textinput">4.3 How do you protect my presonal information(maximum 30 words)?</label>  
+
+  <input id="personal" onfocusout="check_wordlength()" style="width: 762px;" name="textinput" placeholder="placeholder" class="form-control input-md" type="text">
+    
+ 
+
+
 
 <!-- Text input-->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="textinput">What happens when I limit sharing for an account I hold jointly with someone else?</label>  
+  <label class="col-md-4 control-label" for="textinput">4.4 What happens when I limit sharing for an account I hold jointly with someone else?</label>  
 
   <input id="textinput" style="width: 762px;" name="textinput" placeholder="placeholder" class="form-control input-md" type="text">
     
