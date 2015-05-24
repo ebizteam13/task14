@@ -6,7 +6,9 @@ function addInput(divName){
      }
      else {
           var newdiv = document.createElement('div');
-          newdiv.innerHTML = "Info " + (counter + 1) + " <br><textarea class='form-control' id='textarea' name="+"otherInfo"+(counter+1)+"></textarea>";
+          // var dd = document.getElementById(divName);
+          // dd.innerHTML="Info " + (counter + 1) + " <br><textarea class='form-control' id='textarea' name='otherInfo'></textarea><br/></br>";
+          newdiv.innerHTML = "Info " + (counter + 1) + " <br><textarea class='form-control' id='textarea' name='otherInfo'></textarea><br/></br>";
           document.getElementById(divName).appendChild(newdiv);
           counter++;
      }
@@ -17,7 +19,7 @@ var mydropdown = document.getElementById('selectbasic1');
 
 mydropdown.onchange = function(){
 	if(this.value==1){
-     mytextbox.innerHTML  = "[name of financial] institution has no affiliates";
+     mytextbox.innerHTML  = "[name of financial institution] has no affiliates";
    }
    if(this.value==2){
      mytextbox.innerHTML  = "[name of financial institution] does not share with our affiliates";
