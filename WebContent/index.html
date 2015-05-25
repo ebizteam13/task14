@@ -538,31 +538,44 @@
 							<!-- ******************** Section 3	***********************	 -->
 							<div class="tab-pane" id="panel-3">
 								<h2 class="title">Section 3</h2>
+								
+								<p>Do you provide an opt out?
+								</p>
+								<label class="radio-inline" for="q3y"> <input
+												type="radio" name="q3" id="q3y" value="y" onclick="$('#q3div').show();">
+												Yes
+											</label> <label class="radio-inline" for="q3n"> <input
+												type="radio" name="q3" id="q3n" value="n" onclick="$('#q3div').hide();"> No
+											</label>
+								<br>
+								<br>
+								<div id="q3div" style="display:none;">
 								<p>3.1 What's the phone number for customer to call when
 									they want to limit the sharing?</p>
-								<input type="text" id="limit_number" name="limit_number"><br>
+								<input type="text" id="q3_1" name="q3_1"><br>
 								<br>
 								<p>3.2 What's the website for customer to visit when they
 									want to limit the sharing?</p>
-								<input type="text" id="limit_website" name="limit_website"><br>
+								<input type="text" id="q3_2" name="q3_2"><br>
 								<br>
 								<p>3.3 How man days after a customer open a new account would you begin to share his information?</p>
-								<input type="text" id="limit_days" name="limit_days"> days<br>
+								<input type="text" id="q3_3" name="q3_3"> days<br>
 								<br> <br>
 								<p>3.4 What's the phone number for Customer to call when
 									they have question?</p>
-								<input type="text" id="question_number" name="question_number"><br>
+								<input type="text" id="q3_4" name="q3_4"><br>
 								<br>
 								<p>3.5 What's the website given to Customer when they have
 									question?</p>
-								<input type="text" id="question_website" name="question_website"><br>
+								<input type="text" id="q3_5" name="q3_5"><br>
 								<br>
 
-								<p>3.7 Do you have any additional information for the
+								<p>3.6 Do you have any additional information for the
 									cumsters about limit the sharing?</p>
-								    <textarea id="textarea_additionalLimit" name="textarea_additionalLimit"></textarea>
+								    <textarea class="form-control"  id="q3_6" name="q3_6"></textarea>
 								<br>
 								<br>
+								</div>
 								<button type="button" class="btn btn-primary btnBack">Back</button>
 								<button type="button" class="btn btn-primary btnNext">Next</button>
 							</div>
