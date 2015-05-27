@@ -6,9 +6,8 @@ function addInput(divName){
      }
      else {
           var newdiv = document.createElement('div');
-          // var dd = document.getElementById(divName);
-          // dd.innerHTML="Info " + (counter + 1) + " <br><textarea class='form-control' id='textarea' name='otherInfo'></textarea><br/></br>";
-          newdiv.innerHTML = "Info " + (counter + 1) + " <br><textarea class='form-control' id='textarea' name='otherInfo'></textarea><br/></br>";
+          
+          newdiv.innerHTML = "Info " + (counter + 1) + " <br><textarea class='form-control' id='q5_4_"+(counter+1)+"' name='q5_4'></textarea>";
           document.getElementById(divName).appendChild(newdiv);
           counter++;
      }
