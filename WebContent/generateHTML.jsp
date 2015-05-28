@@ -12,7 +12,7 @@
 <script type="text/javascript" src="js/check.js">
 	
 </script>
-x
+<meta charset="utf-8">
 </head>
 
 <body>
@@ -76,10 +76,10 @@ x
 							<th id="tbody_tr3_th1" class="vertical" headers="thead1"
 								rowspan="1"><strong>How? <br></strong></th>
 							<td headers="thead2 tbody_tr3_th1" rowspan="1">
-								<p>All financial companies need to share customers’ personal
+								<p>All financial companies need to share customers' personal
 									information to run their everyday business. In the section
 									below, we list the reasons financial companies can share their
-									customers’ personal information; the reasons Wells Fargo
+									customers' personal information; the reasons Wells Fargo
 									chooses to share; and whether you can limit this sharing.</p>
 							</td>
 						</tr>
@@ -104,7 +104,7 @@ x
 					<tbody>
 						<tr>
 							<td headers="thead1"><strong>For our everyday
-									business purposes</strong> — such as to process your transactions,
+									business purposes</strong> - such as to process your transactions,
 								maintain your account(s), respond to court orders and legal
 								investigations, or report to credit bureaus <br></td>
 							<td headers="thead2"><strong>Yes <br></strong></td>
@@ -112,7 +112,7 @@ x
 						</tr>
 						<tr>
 							<td headers="thead1"><strong>For our marketing
-									purposes</strong> — with service providers we use to offer our products
+									purposes</strong> - with service providers we use to offer our products
 								and services to you (please see below to limit the ways in which
 								we contact you) <br></td>
 							<td headers="thead2"><strong>Yes <br></strong></td>
@@ -127,15 +127,15 @@ x
 							</td>
 						</tr>
 						<tr>
-							<td headers="thead1"><strong>For our affiliates’
-									everyday business purposes</strong> — information about your
+							<td headers="thead1"><strong>For our affiliates'
+									everyday business purposes</strong> - information about your
 								transactions and experiences <br></td>
 							<td headers="thead2"><strong>Yes <br></strong></td>
 							<td headers="thead3"><strong>No <br></strong></td>
 						</tr>
 						<tr>
-							<td headers="thead1"><strong>For our affiliates’
-									everyday business purposes</strong> — information about your
+							<td headers="thead1"><strong>For our affiliates'
+									everyday business purposes</strong> - information about your
 								creditworthiness <br></td>
 							<td headers="thead2"><strong>Yes <br></strong></td>
 							<td headers="thead3"><strong>Yes <br></strong></td>
@@ -169,9 +169,9 @@ x
 							<td headers="thead2">
 								<ul>
 									<li>Call <span class="c12"><strong>1-888-528-8460</strong></span>
-										— our menu will prompt you through your choices.
+										- our menu will prompt you through your choices.
 									</li>
-									<li>Online banking customers — log on to a secure session
+									<li>Online banking customers - log on to a secure session
 										at wellsfargo.com, and choose Change Privacy Preferences under
 										the Account Services tab.</li>
 								</ul>
@@ -194,9 +194,9 @@ x
 								<ul>
 									<li>To limit our direct marketing to you by mail or
 										telephone, call <span class="c12"><strong>1-888-528-8460</strong></span>
-										— our menu will guide you through your choices.
+										- our menu will guide you through your choices.
 									</li>
-									<li>Online banking customers — log on to a secure session
+									<li>Online banking customers - log on to a secure session
 										at wellsfargo.com, and choose Change Privacy Preferences under
 										the Account Services tab.</li>
 								</ul>
@@ -301,13 +301,13 @@ x
 						<tr>
 							<td headers="thead1 tbody_tr2_th1">
 								<p>
-									<strong>Why can’t I limit all sharing?</strong>
+									<strong>Why can't I limit all sharing?</strong>
 								</p>
 							</td>
 							<td headers="undefined tbody_tr2_th1">
 								<p>Federal law gives you the right to limit only:</p>
 								<ul>
-									<li>Sharing for affiliates’ everyday business purposes —
+									<li>Sharing for affiliates' everyday business purposes -
 										information about your creditworthiness</li>
 									<li>Affiliates from using your information to market to
 										you</li>
@@ -417,7 +417,7 @@ x
 							<td headers="thead1">
 								<p>
 									<strong>Do Not Call Policy:</strong> This Privacy Policy
-									constitutes Wells Fargo’s Do Not Call Policy under the
+									constitutes Wells Fargo's Do Not Call Policy under the
 									Telephone Consumer Protection Act for all consumers. Wells
 									Fargo maintains an internal Do Not Call preference list. Do Not
 									Call requests will be honored within 30 days and will be
@@ -490,13 +490,13 @@ x
 					<tbody>
 						<tr>
 							<td headers="thead1">
-								<p>Wells Fargo U.S. banks and companies with “Wells Fargo”
+								<p>Wells Fargo U.S. banks and companies with "Wells Fargo"
 									in their names, including Wells Fargo Advisors, LLC; Wells
 									Fargo Bank, N.A. doing business as Flatiron Capital; as well as
 									American Mortgage Network, LLC, doing business as Vertice; and
 									Abbot Downing, a Wells Fargo Business.</p>
 								<p>This Privacy Disclosure also describes the privacy
-									practices of First Clearing, LLC (“First Clearing”), which is
+									practices of First Clearing, LLC ("First Clearing"), which is
 									an affiliated clearing firm of Wells Fargo Advisors, LLC. First
 									Clearing does not market to holders of accounts carried by
 									First Clearing or provide information regarding such accounts
