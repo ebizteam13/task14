@@ -15,7 +15,7 @@ function addInput(divName){
 name;
 function setName(){
   name=document.getElementById("q1_1").value;
-  window.alert(name);
+  
 }
 
 var mytextbox = document.getElementById('textarea1');
