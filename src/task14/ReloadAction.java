@@ -20,19 +20,19 @@ public class ReloadAction extends Action {
 	@Override
 	public String performAction(HttpServletRequest request,
 			HttpServletResponse response) {
-		Gson gson = new Gson();
-		FileReader fr;
-		try {
-			fr = new FileReader(new File("d:/sample.txt"));
-
-			BufferedReader br = new BufferedReader(fr);
-			String jsonString = br.readLine();
-			final formBean form = gson.fromJson(jsonString, formBean.class);
-			request.setAttribute("form", form);
-			fr.close();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
+//		Gson gson = new Gson();
+//		FileReader fr;
+//		try {
+//			fr = new FileReader(new File("d:/sample.txt"));
+//
+//			BufferedReader br = new BufferedReader(fr);
+//			String jsonString = br.readLine();
+//			final formBean form = gson.fromJson(jsonString, formBean.class);
+//			request.setAttribute("form", form);
+//			fr.close();
+//		} catch (IOException e) {
+//			e.printStackTrace();
+//		}
 		return "sam.jsp";
 	}
 
