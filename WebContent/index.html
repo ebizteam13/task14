@@ -543,43 +543,57 @@
 							<div class="tab-pane" id="panel-3">
 								<h2 class="title">Section 3</h2>
 								
-								<p>Do you provide an opt out?
-								</p>
-								<label class="radio-inline" for="q3y"> <input
-												type="radio" name="q3" id="q3y" value="y" onclick="$('#q3div').show();">
-												Yes
-											</label> <label class="radio-inline" for="q3n"> <input
-												type="radio" name="q3" id="q3n" value="n" onclick="$('#q3div').hide();"> No
-											</label>
 								<br>
-								<br>
-								<div id="q3div" style="display:none;">
-								<p>3.1 What's the phone number for customer to call when
+								<div id="q3div" >
+								
+								<p>3.1.1 What's the phone number for customer to call when
 									they want to limit the sharing?</p>
 								<input type="text" id="q3_1" name="q3_1"><br>
 								<br>
-								<p>3.2 What's the website for customer to visit when they
+								<p>3.1.2 What's the website for customer to visit when they
 									want to limit the sharing?</p>
 								<input type="text" id="q3_2" name="q3_2"><br>
 								<br>
-								<p>3.3 How man days after a customer open a new account would you begin to share his information?</p>
+								<p>3.1.3 Do you offer email opt-out?</p>
+									<div class="form-group">
+										<div class="col-md-4">
+											<label class="radio-inline" for="q311y"> <input
+												type="radio" name="q3_1_1g" id="q311y" value="y" onclick="$('#q3131div').show();">
+												Yes
+											</label> <label class="radio-inline" for="q311n"> <input
+												type="radio" name="q3_1_1g" id="q311n" value="n" onclick="$('#q3131div').hide();"> 
+												No
+											</label>
+										</div>
+									</div>
+												<br>
+								<div id="q3131div" style="display:none;">
+								<p>3.1.3.1 What's the email address for customer to contact when they
+									want to limit the sharing?</p>
+								<input type="text" id="q3_2_2" name="q3_2_2g"><br>
+								</div>
+								<br>
+								<p>3.1.4 How man days after a customer open a new account would you begin to share his information?</p>
 								<input type="text" id="q3_3" name="q3_3"> days<br>
+								
+								
 								<br> <br>
-								<p>3.4 What's the phone number for Customer to call when
+								</div>
+								<p>3.2 What's the phone number for Customer to call when
 									they have question?</p>
 								<input type="text" id="q3_4" name="q3_4"><br>
 								<br>
-								<p>3.5 What's the website given to Customer when they have
+								<p>3.3 What's the website given to Customer when they have
 									question?</p>
 								<input type="text" id="q3_5" name="q3_5"><br>
 								<br>
 
-								<p>3.6 Do you have any additional information for the
+								<p>3.4 Do you have any additional information for the
 									cumsters about limit the sharing?</p>
 								    <textarea class="form-control"  id="q3_6" name="q3_6"></textarea>
 								<br>
 								<br>
-								</div>
+								
 								<button type="button" class="btn btn-primary btnBack">Back</button>
 								<button type="button" class="btn btn-primary btnNext">Next</button>
 							</div>
