@@ -68,8 +68,8 @@
 						id="bs-example-navbar-collapse-1">
 						<ul class="nav navbar-nav">
 							<!-- <li class="active"><a onclick="refill()" href="#">Generate</a></li> -->
-							<li><button id="singlebutton" name="submit" value="save" class="btn btn-primary" type="submit" >Save
-							</button></li>
+							<!-- <li><button id="singlebutton" name="submit" value="save" class="btn btn-primary" type="submit" >Save
+							</button></li> -->
 							<li class="active"><input id="file" onchange="refill()" type="file" >Generate</li>
 							
 							<li><a onclick="import_file()" href="#">Import</a></li>
@@ -91,6 +91,11 @@
 							<li><a href="#panel-4" data-toggle="tab">Section 4</a></li>
 							<li><a href="#panel-5" data-toggle="tab">Section 5</a></li>
 						</ul>
+
+						<br>
+						<button id="singlebutton" name="submit" value="save" type="submit" class="btn btn-success">Save</button>
+						<button id="generateHTMLbutton" name="submit" value="generate" type="submit" class="btn btn-success">Generate</button>
+
 						
 						<div class="tab-content">
 							<div class="tab-pane active" id="panel-1">
