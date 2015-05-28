@@ -17,7 +17,7 @@
 
 <body>
 
-
+<button id="singlebutton" name="submit" value="save" type="button" class="btn btn-success" onclick="window.document.execCommand('SaveAs', true, form.html)">Save</button>
 	<div class="container">
 		<div class="row clearfix">
 			<div class="col-md-12 column">
@@ -107,53 +107,58 @@
 									business purposes</strong> - such as to process your transactions,
 								maintain your account(s), respond to court orders and legal
 								investigations, or report to credit bureaus <br></td>
-							<td headers="thead2"><strong>Yes <br></strong></td>
-							<td headers="thead3"><strong>No <br></strong></td>
+							<td headers="thead2"><strong>${item.q2_1} <br></strong></td>
+							<td headers="thead3"><strong>${item.q2_1_1} <br></strong></td>
 						</tr>
 						<tr>
 							<td headers="thead1"><strong>For our marketing
 									purposes</strong> - with service providers we use to offer our products
 								and services to you (please see below to limit the ways in which
 								we contact you) <br></td>
-							<td headers="thead2"><strong>Yes <br></strong></td>
-							<td headers="thead3"><strong>No <br></strong></td>
+							<td headers="thead2"><strong>${item.q2_2} <br></strong></td>
+							<td headers="thead3"><strong>${item.q2_2_1} <br></strong></td>
 						</tr>
-						<tr>
+						<c:if test="${item.q2_3 == \"Yes\"}">
+   						<tr>
 							<td headers="thead1"><strong>For joint marketing
 									with other financial companies <br>
 							</strong></td>
-							<td headers="thead2"><strong>No <br></strong></td>
-							<td headers="thead3"><strong>We don't share <br></strong>
+							<td headers="thead2"><strong>${item.q2_3_2} <br></strong></td>
+							<td headers="thead3"><strong>${item.q2_3_2_1}<br></strong>
 							</td>
 						</tr>
+						</c:if>
+						<c:if test="${item.q2_4 == \"Yes\"}">
 						<tr>
 							<td headers="thead1"><strong>For our affiliates'
 									everyday business purposes</strong> - information about your
 								transactions and experiences <br></td>
-							<td headers="thead2"><strong>Yes <br></strong></td>
-							<td headers="thead3"><strong>No <br></strong></td>
+							<td headers="thead2"><strong>${item.q2_4_2_1} <br></strong></td>
+							<td headers="thead3"><strong>${item.q2_4_2_1_1} <br></strong></td>
 						</tr>
 						<tr>
 							<td headers="thead1"><strong>For our affiliates'
 									everyday business purposes</strong> - information about your
 								creditworthiness <br></td>
-							<td headers="thead2"><strong>Yes <br></strong></td>
-							<td headers="thead3"><strong>Yes <br></strong></td>
+							<td headers="thead2"><strong>${item.q2_4_2_2}  <br></strong></td>
+							<td headers="thead3"><strong>${item.q2_4_2_2_1} <br></strong></td>
 						</tr>
+						
 						<tr>
 							<td headers="thead1"><strong>For our affiliates to
 									market to you <br>
 							</strong></td>
-							<td headers="thead2"><strong>Yes <br></strong></td>
-							<td headers="thead3"><strong>Yes <br></strong></td>
+							<td headers="thead2"><strong>${item.q2_4_3}  <br></strong></td>
+							<td headers="thead3"><strong>${item.q2_4_3_1}  <br></strong></td>
 						</tr>
+						</c:if>
 						<tr>
 							<td headers="thead1" rowspan="1"><strong>For
 									nonaffiliates to market to you <br>
 							</strong></td>
-							<td headers="thead2" rowspan="1"><strong>No <br></strong>
+							<td headers="thead2" rowspan="1"><strong>${item.q2_5} <br></strong>
 							</td>
-							<td headers="thead3" rowspan="1"><strong>We don't
+							<td headers="thead3" rowspan="1"><strong>${item.q2_5_1}
 									share</strong></td>
 						</tr>
 					</tbody>
@@ -168,11 +173,11 @@
 							<td headers="thead1"><strong>To limit our sharing</strong> <br></td>
 							<td headers="thead2">
 								<ul>
-									<li>Call <span class="c12"><strong>1-888-528-8460</strong></span>
+									<li>Call <span class="c12"><strong>${item.q3_1}</strong></span>
 										- our menu will prompt you through your choices.
 									</li>
 									<li>Online banking customers - log on to a secure session
-										at wellsfargo.com, and choose Change Privacy Preferences under
+										at ${item.q3_2}, and choose Change Privacy Preferences under
 										the Account Services tab.</li>
 								</ul>
 								<p>
@@ -180,7 +185,7 @@
 								</p>
 								<p>
 									If you are a new customer, we can begin sharing your
-									information 30 days from the date we sent this notice. When you
+									information ${item.q3_3} days from the date we sent this notice. When you
 									are no longer our customer, we can continue to share your
 									information as described in this notice. However, you can
 									contact us at any time to limit our sharing. <br>
@@ -193,11 +198,11 @@
 							<td headers="tbody_tr2_th1">
 								<ul>
 									<li>To limit our direct marketing to you by mail or
-										telephone, call <span class="c12"><strong>1-888-528-8460</strong></span>
+										telephone, call <span class="c12"><strong>${item.q3_1}</strong></span>
 										- our menu will guide you through your choices.
 									</li>
 									<li>Online banking customers - log on to a secure session
-										at wellsfargo.com, and choose Change Privacy Preferences under
+										at ${item.q3_2}, and choose Change Privacy Preferences under
 										the Account Services tab.</li>
 								</ul>
 								<p>
@@ -220,9 +225,8 @@
 							<td headers="tbody_tr2_th1" rowspan="1"><em><strong>Questions?
 										<br>
 								</strong></em></td>
-							<td headers="tbody_tr2_th1" rowspan="1">Call 1-800-TO-WELLS
-								(<span class="c12"><strong>1-800-869-3557</strong></span>) or go
-								to wellsfargo.com/privacy-security
+							<td headers="tbody_tr2_th1" rowspan="1">Call ${item.q3_4}
+								 or go to ${item.q3_5}
 							</td>
 						</tr>
 					</tbody>
