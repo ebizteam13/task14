@@ -54,6 +54,7 @@
 			<div class="col-md-12 column">
 				<nav class="navbar navbar-default" role="navigation">
 					<div class="navbar-header">
+						<form id="registrationForm" action="GenerateServlet" method="GET">
 						<button type="button" class="navbar-toggle" data-toggle="collapse"
 							data-target="#bs-example-navbar-collapse-1">
 							<span class="sr-only">Toggle navigation</span><span
@@ -67,7 +68,8 @@
 						id="bs-example-navbar-collapse-1">
 						<ul class="nav navbar-nav">
 							<!-- <li class="active"><a onclick="refill()" href="#">Generate</a></li> -->
-							
+							<li><button id="singlebutton" name="submit" value="save" class="btn btn-primary" type="submit" >Save
+							</button></li>
 							<li class="active"><input id="file" onchange="refill()" type="file" >Generate</li>
 							
 							<li><a onclick="import_file()" href="#">Import</a></li>
@@ -80,7 +82,7 @@
 
 				</nav>
 				<div class="tabbable" id="tabs-739093">
-					<form id="registrationForm" action="GenerateServlet" method="GET">
+					
 						<ul class="nav nav-tabs">
 							<li class="active"><a href="#panel-1" data-toggle="tab">Section
 									1</a></li>
@@ -89,7 +91,7 @@
 							<li><a href="#panel-4" data-toggle="tab">Section 4</a></li>
 							<li><a href="#panel-5" data-toggle="tab">Section 5</a></li>
 						</ul>
-						<button id="singlebutton" name="submit" value="save" type="submit" >Save</button>
+						
 						<div class="tab-content">
 							<div class="tab-pane active" id="panel-1">
 								<h2 class="title">Section 1</h2>
