@@ -26,7 +26,7 @@
 					<em>This policy is effective as of November 1, 2013.</em>
 				</p>
 				<table
-					summary="WHAT DOES WELLS FARGO DO WITH YOUR PERSONAL INFORMATION?"
+					summary="WHAT DOES ${item.q1_1} DO WITH YOUR PERSONAL INFORMATION?"
 					class="table" style="width: 100%;">
 					<colgroup>
 						<col width="15%" style="width: 15%;">
@@ -79,7 +79,7 @@
 								<p>All financial companies need to share customers' personal
 									information to run their everyday business. In the section
 									below, we list the reasons financial companies can share their
-									customers' personal information; the reasons Wells Fargo
+									customers' personal information; the reasons ${item.q1_1}
 									chooses to share; and whether you can limit this sharing.</p>
 							</td>
 						</tr>
@@ -97,7 +97,7 @@
 							<th id="thead1" rowspan="1">Reasons we can share your
 								personal information <br>
 							</th>
-							<th id="thead2" rowspan="1">Does Wells Fargo share? <br></th>
+							<th id="thead2" rowspan="1">Does ${item.q1_1} share? <br></th>
 							<th id="thead3" rowspan="1">Can you limit this sharing? <br></th>
 						</tr>
 					</thead>
@@ -251,8 +251,8 @@
 								</p>
 							</td>
 							<td headers="undefined">
-								<p>Wells Fargo U.S. companies that use Wells Fargo in their
-									names and other companies listed in the Wells Fargo U.S. legal
+								<p>${item.q1_1} U.S. companies that use ${item.q1_1} in their
+									names and other companies listed in the ${item.q1_1} U.S. legal
 									entities section below.</p>
 							</td>
 						</tr>
@@ -266,7 +266,7 @@
 						<tr>
 							<td headers="thead1 tbody_tr2_th1">
 								<p>
-									<strong>How does Wells Fargo protect my personal
+									<strong>How does ${item.q1_1} protect my personal
 										information?</strong>
 								</p>
 							</td>
@@ -281,7 +281,7 @@
 						<tr>
 							<td headers="thead1 tbody_tr2_th1">
 								<p>
-									<strong>How does Wells Fargo collect my personal
+									<strong>How does ${item.q1_1} collect my personal
 										information?</strong>
 								</p>
 							</td>
@@ -356,9 +356,7 @@
 								<p>Companies related by common ownership or control. They
 									can be financial and non-financial companies.</p>
 								<ul>
-									<li>Our affiliates include financial companies with Wells
-										Fargo in their name such as Wells Fargo Bank, N.A., Wells
-										Fargo Insurance, Inc., and Wells Fargo Advisors, LLC.</li>
+									<li>Our affiliates include financial companies with ${item.q1_1} in their name such as ${item.q1_1} Bank, N.A., ${item.q1_1} Insurance, Inc., and ${item.q1_1} Advisors, LLC.</li>
 								</ul>
 							</td>
 						</tr>
@@ -372,7 +370,7 @@
 								<p>Companies not related by common ownership or control.
 									They can be financial and non-financial companies.</p>
 								<ul>
-									<li>Wells Fargo does not share with nonaffiliates so they
+									<li>${item.q1_1} does not share with nonaffiliates so they
 										can market to you.</li>
 								</ul>
 							</td>
@@ -388,7 +386,7 @@
 									companies that together market financial products or services
 									to you.</p>
 								<ul>
-									<li>Wells Fargo does not jointly market.</li>
+									<li>${item.q1_1} does not jointly market.</li>
 								</ul>
 							</td>
 						</tr>
@@ -417,13 +415,12 @@
 							<td headers="thead1">
 								<p>
 									<strong>Do Not Call Policy:</strong> This Privacy Policy
-									constitutes Wells Fargo's Do Not Call Policy under the
-									Telephone Consumer Protection Act for all consumers. Wells
-									Fargo maintains an internal Do Not Call preference list. Do Not
+									constitutes ${item.q1_1}'s Do Not Call Policy under the
+									Telephone Consumer Protection Act for all consumers. ${item.q1_1} maintains an internal Do Not Call preference list. Do Not
 									Call requests will be honored within 30 days and will be
 									effective for at least five years from the date of request. No
 									telemarketing calls will be made to residential or cellular
-									phone numbers that appear on the Wells Fargo Do Not Call list.
+									phone numbers that appear on the ${item.q1_1} Do Not Call list.
 								</p>
 							</td>
 						</tr>
@@ -435,7 +432,7 @@
 									Do Not Call List by following the directions in the <em>To
 										limit direct marketing</em> section. For more information, contact
 									us at <span class="c12"><strong>1-800-869-3557</strong></span>;
-									nevadanoticeinfo@wellsfargo.com, or Wells Fargo, P.O. Box 5277,
+									nevadanoticeinfo@wellsfargo.com, or ${item.q1_1}, P.O. Box 5277,
 									Sioux Falls, SD 57117-5277. Or, contact the Bureau of Consumer
 									Protection, Office of the Nevada Attorney General, 555 E.
 									Washington St., Suite 3900, Las Vegas, NV 89101; <span
@@ -454,7 +451,7 @@
 							<td headers="thead1">
 								<p>
 									<strong>Trust or fiduciary accounts:</strong> Trust or
-									fiduciary accounts for which Wells Fargo is the trustee or
+									fiduciary accounts for which ${item.q1_1} is the trustee or
 									service provider, including employer-sponsored retirement
 									accounts, are protected under special rules of confidentiality.
 									Information on these accounts is not shared for marketing
@@ -465,8 +462,8 @@
 						<tr>
 							<td headers="thead1">
 								<p>
-									<strong>Wells Fargo Advisors financial advisors:</strong> If
-									your financial advisor's affiliation with Wells Fargo Advisors
+									<strong>${item.q1_1} Advisors financial advisors:</strong> If
+									your financial advisor's affiliation with ${item.q1_1} Advisors
 									ends and they join a non-affiliated securities broker-dealer,
 									your financial advisor may be permitted to use limited
 									information to contact you to join their new firm, as a usual
@@ -482,7 +479,7 @@
 					<thead>
 						<tr>
 							<th id="thead1" rowspan="1">
-								<p>Wells Fargo U.S. legal entities and businesses covered by
+								<p>${item.q1_1} U.S. legal entities and businesses covered by
 									this notice</p>
 							</th>
 						</tr>
@@ -490,17 +487,16 @@
 					<tbody>
 						<tr>
 							<td headers="thead1">
-								<p>Wells Fargo U.S. banks and companies with "Wells Fargo"
-									in their names, including Wells Fargo Advisors, LLC; Wells
-									Fargo Bank, N.A. doing business as Flatiron Capital; as well as
+								<p>${item.q1_1} U.S. banks and companies with "${item.q1_1}"
+									in their names, including ${item.q1_1} Advisors, LLC; ${item.q1_1} Bank, N.A. doing business as Flatiron Capital; as well as
 									American Mortgage Network, LLC, doing business as Vertice; and
-									Abbot Downing, a Wells Fargo Business.</p>
+									Abbot Downing, a ${item.q1_1} Business.</p>
 								<p>This Privacy Disclosure also describes the privacy
 									practices of First Clearing, LLC ("First Clearing"), which is
-									an affiliated clearing firm of Wells Fargo Advisors, LLC. First
+									an affiliated clearing firm of ${item.q1_1} Advisors, LLC. First
 									Clearing does not market to holders of accounts carried by
 									First Clearing or provide information regarding such accounts
-									or regarding your creditworthiness to other Wells Fargo
+									or regarding your creditworthiness to other ${item.q1_1}
 									companies for their own marketing or everyday business
 									purposes, and the choices in this notice do not apply to First
 									Clearing.</p>
@@ -509,9 +505,9 @@
 									covered by this notice and have separate privacy notices:
 								</p>
 								<ul>
-									<li>Wells Fargo Financial National Bank</li>
-									<li>The Wells Fargo Advantage Funds</li>
-									<li>Wells Fargo Advisors Financial Network, LLC</li>
+									<li>${item.q1_1} Financial National Bank</li>
+									<li>The ${item.q1_1} Advantage Funds</li>
+									<li>${item.q1_1} Advisors Financial Network, LLC</li>
 									<li>Any insurance company, insurance agency, or insurance
 										brokerage or other company, which has its own privacy
 										disclosures</li>
