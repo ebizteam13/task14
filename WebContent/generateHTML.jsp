@@ -369,11 +369,11 @@ function myFunction() {
 					<p>Companies related by common ownership or control. They can
 						be financial and non-financial companies.</p>
 					<ul>
-<<<<<<< Updated upstream
+
 						<li>${item.q5_1}</li>
-=======
+
 						<li>${item.q5_1_2}</li>
->>>>>>> Stashed changes
+
 					</ul>
 				</td>
 			</tr>
@@ -387,11 +387,11 @@ function myFunction() {
 					<p>Companies not related by common ownership or control. They
 						can be financial and non-financial companies.</p>
 					<ul>
-<<<<<<< Updated upstream
+
 						<li>${item.q5_2}</li>
-=======
+
 						<li>${item.q5_2_2}</li>
->>>>>>> Stashed changes
+
 					</ul>
 				</td>
 			</tr>
@@ -405,11 +405,11 @@ function myFunction() {
 					<p>A formal agreement between nonaffiliated financial companies
 						that together market financial products or services to you.</p>
 					<ul>
-<<<<<<< Updated upstream
+
 						<li>${item.q5_3}</li>
-=======
+
 						<li>${item.q5_3_2}</li>
->>>>>>> Stashed changes
+
 					</ul>
 				</td>
 			</tr>
@@ -425,11 +425,11 @@ function myFunction() {
 		<tbody>
 			<tr>
 				<td headers="thead1">
-<<<<<<< Updated upstream
+
 					<p>
 						<strong>${item.q5_4}
 					</p>
-=======
+
 					
 						
 						<ul>
@@ -438,8 +438,7 @@ function myFunction() {
 									</c:forEach>
 
 								</ul>
-					
->>>>>>> Stashed changes
+
 				</td>
 			</tr>
 
