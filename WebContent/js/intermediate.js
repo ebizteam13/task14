@@ -248,25 +248,26 @@ function refill(){
     
     
     
-    
-					    //section - 3
-					    if(str.q3=='y'){
-					    	document.getElementById("q3y").checked=true;
+    					  //section - 3
 					    	document.getElementById("q3_1").value=str.q3_1;
 					    	document.getElementById("q3_2").value=str.q3_2;
-					    	document.getElementById("q3_3").value=str.q3_3;
+							if(str.q3_1_1g=='y'){	    
+								  document.getElementById("q251y").checked=true;    
+								  document.getElementById("q251y").click();
+							}
+							else if(str.q3_1_1g=='n')
+									document.getElementById("q251n").checked=true;
+
 					    	document.getElementById("q3_4").value=str.q3_4;
 					    	document.getElementById("q3_5").value=str.q3_5;
 					    	document.getElementById("q3_6").value=str.q3_6;
 					    	
 					    	
-					    } 
-						else{
-							document.getElementById("q3n").checked=true;
-						}        
+					          
 					   
 					    //end of section -3
     
+					      
     
     
 				    //seciton -4 
