@@ -370,7 +370,6 @@ function myFunction() {
 						be financial and non-financial companies.</p>
 					<ul>
 
-						<li>${item.q5_1}</li>
 
 						<li>${item.q5_1_2}</li>
 
@@ -388,8 +387,6 @@ function myFunction() {
 						can be financial and non-financial companies.</p>
 					<ul>
 
-						<li>${item.q5_2}</li>
-
 						<li>${item.q5_2_2}</li>
 
 					</ul>
@@ -406,7 +403,7 @@ function myFunction() {
 						that together market financial products or services to you.</p>
 					<ul>
 
-						<li>${item.q5_3}</li>
+						
 
 						<li>${item.q5_3_2}</li>
 
@@ -429,8 +426,7 @@ function myFunction() {
 					<p>
 						<strong>${item.q5_4}
 					</p>
-
-					
+				
 						
 						<ul>
 									<c:forEach var="q1_2" items="${item.q5_4}">
