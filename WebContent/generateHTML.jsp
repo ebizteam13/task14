@@ -62,7 +62,7 @@ function createEmailLink(){
 		<div class="row clearfix">
 			<div class="col-md-12 column">
 			<br><br>
-			<a id="export" class="btn btn-success" download="" href="#">export</a>
+			<a id="export" class="btn btn-success" download="" href="#">Export HTML</a>
 			<br><br>
 				<p>
 					<em>This policy is effective as of May 13, 2015.</em>
