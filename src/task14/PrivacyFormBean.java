@@ -8,24 +8,24 @@ public class PrivacyFormBean extends FormBean{
 	String q1_2[];
 	String q1_3;
 	String q2_1;
-	String q2_1_1 = "We don\'t share";
+	String q2_1_1 = "No";
 	String q2_2;
-	String q2_2_1 = "We don\'t share";;
+	String q2_2_1 = "No";;
 	String q2_3;
 	String q2_3_1;
 	String q2_3_2;//radio	
-	String q2_3_2_1  = "We don\'t share";//radio
+	String q2_3_2_1  = "No";//radio
 	String q2_4;
 	String q2_4_1;
 	String q2_4_2;
 	String q2_4_2_1;//radio
-	String q2_4_2_1_1  = "We don\'t share"; //radio
+	String q2_4_2_1_1  = "No"; //radio
 	String q2_4_2_2;//radio
-	String q2_4_2_2_1  = "We don\'t share";//radio
+	String q2_4_2_2_1  = "No";//radio
 	String q2_4_3;//radio
-	String q2_4_3_1 = "We don\'t share";
+	String q2_4_3_1 = "No";
 	String q2_5;
-	String q2_5_1 = "We don\'t share";//radio
+	String q2_5_1 = "No";//radio
 	String q3;
 
 	

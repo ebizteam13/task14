@@ -249,19 +249,25 @@ function refill(){
     
     
     					  //section - 3
-					    	document.getElementById("q3_1").value=str.q3_1;
-					    	document.getElementById("q3_2").value=str.q3_2;
-							if(str.q3_1_1g=='y'){	    
-								  document.getElementById("q251y").checked=true;    
-								  document.getElementById("q251y").click();
-							}
-							else if(str.q3_1_1g=='n')
-									document.getElementById("q251n").checked=true;
+				    	  //section - 3
+                            document.getElementById("q3_1").value=str.q3_1;
+                            document.getElementById("q3_2").value=str.q3_2;
+                            if(str.q3_1_1g=='y'){        
+                                  document.getElementById("q251y").checked=true;    
+                                  document.getElementById("q251y").click();
+                            }
+                            else if(str.q3_1_1g=='n')
+                                    document.getElementById("q251n").checked=true;
 
-					    	document.getElementById("q3_4").value=str.q3_4;
-					    	document.getElementById("q3_5").value=str.q3_5;
-					    	document.getElementById("q3_6").value=str.q3_6;
-					    	
+                            document.getElementById("q3_4").value=str.q3_4;
+                            document.getElementById("q3_5").value=str.q3_5;
+                            document.getElementById("q3_6").value=str.q3_6;
+                            
+                            
+                              
+                       
+                        //end of section -3
+   
 					    	
 					          
 					   

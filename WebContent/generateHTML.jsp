@@ -174,8 +174,7 @@ function myFunction() {
 							</strong></td>
 							<td headers="thead2" rowspan="1"><strong>${item.q2_5} <br></strong>
 							</td>
-							<td headers="thead3" rowspan="1"><strong>${item.q2_5_1}
-									share</strong></td>
+							<td headers="thead3" rowspan="1"><strong>${item.q2_5_1}</strong></td>
 						</tr>
 					</tbody>
 				</table>
