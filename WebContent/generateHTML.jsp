@@ -280,9 +280,9 @@ function createEmailLink(){
 										</label>
 									</c:if>
 									</div>
-									<p>Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="name" name="name" onchange="createEmailLink"></p>
-									<p>Address:&nbsp;&nbsp;&nbsp; <input type="text" id="address" name="address" onchange="createEmailLink"></p>
-									<p>Account #: <input type="text" id="account" name="account" onchange="createEmailLink"></p>
+									<p>Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="name" name="name" onchange="createEmailLink()"></p>
+									<p>Address:&nbsp;&nbsp;&nbsp; <input type="text" id="address" name="address" onchange="createEmailLink()"></p>
+									<p>Account #: <input type="text" id="account" name="account" onchange="createEmailLink()"></p>
 									</c:if>
 								</ul>
 								<p>
