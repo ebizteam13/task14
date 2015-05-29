@@ -284,7 +284,7 @@ function myFunction() {
 			<tr>
 				<td headers="thead1 tbody_tr2_th1">
 					<p>
-						<strong>How does ${q1_1} protect my personal
+						<strong>How does ${item.q1_1} protect my personal
 							information?</strong>
 					</p>
 				</td>
@@ -298,7 +298,7 @@ function myFunction() {
 			<tr>
 				<td headers="thead1 tbody_tr2_th1">
 					<p>
-						<strong>How does ${q1_1} collect my personal
+						<strong>How does ${item.q1_1} collect my personal
 							information?</strong>
 					</p>
 				</td>
@@ -306,12 +306,12 @@ function myFunction() {
 					<p>We collect your personal information, for example, when you:</p>
 					<ul>
 					<c:forEach var="q4_2" items="${item.q4_2}">
-							<li>${q4_2}</li>
+							<li>${item.q4_2}</li>
 					</c:forEach>
 					</ul>
 					
 					
-					<p>${q4_3}</p>
+					<p>${item.q4_3}</p>
 				</td>
 			</tr>
 			<tr>
@@ -341,7 +341,7 @@ function myFunction() {
 					</p>
 				</td>
 				<td headers="undefined tbody_tr2_th1" rowspan="1">
-					<p>${q4_4}</p>
+					<p>${item.q4_4}</p>
 				</td>
 			</tr>
 		</tbody>
@@ -369,7 +369,7 @@ function myFunction() {
 					<p>Companies related by common ownership or control. They can
 						be financial and non-financial companies.</p>
 					<ul>
-						<li>${q5_1}</li>
+						<li>${item.q5_1}</li>
 					</ul>
 				</td>
 			</tr>
@@ -383,7 +383,7 @@ function myFunction() {
 					<p>Companies not related by common ownership or control. They
 						can be financial and non-financial companies.</p>
 					<ul>
-						<li>${q5_2}</li>
+						<li>${item.q5_2}</li>
 					</ul>
 				</td>
 			</tr>
@@ -397,7 +397,7 @@ function myFunction() {
 					<p>A formal agreement between nonaffiliated financial companies
 						that together market financial products or services to you.</p>
 					<ul>
-						<li>${q5_3}</li>
+						<li>${item.q5_3}</li>
 					</ul>
 				</td>
 			</tr>
@@ -414,7 +414,7 @@ function myFunction() {
 			<tr>
 				<td headers="thead1">
 					<p>
-						<strong>${q5_4}
+						<strong>${item.q5_4}
 					</p>
 				</td>
 			</tr>
