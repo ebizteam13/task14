@@ -423,13 +423,9 @@ function myFunction() {
 			<tr>
 				<td headers="thead1">
 
-					<p>
-						<strong>${item.q5_4}
-					</p>
-				
 						
 						<ul>
-									<c:forEach var="q1_2" items="${item.q5_4}">
+									<c:forEach var="q5_4" items="${item.q5_4}">
 										<li>${q5_4}</li>
 									</c:forEach>
 
