@@ -33,14 +33,14 @@ function myFunction() {
 
 <body>
 
-<a id="export" class="btn" download="" href="#">export</a>
+
 	<div class="container">
 		<div class="row clearfix">
 			<div class="col-md-12 column">
-
-				<p>
-					<em>This policy is effective as of November 1, 2013.</em>
-				</p>
+			<br><br>
+			<a id="export" class="btn btn-success" download="" href="#">export</a>
+			<br><br>
+				
 				<table
 					summary="WHAT DOES ${item.q1_1} DO WITH YOUR PERSONAL INFORMATION?"
 					class="table" style="width: 100%;">

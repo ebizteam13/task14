@@ -44,7 +44,48 @@
 		$('.btnNext').click(function() {
 			$('.nav-tabs > .active').next('li').find('a').trigger('click');
 		});
+		$("input:radio[name=q2_1_1]").click(function() {
+			myFunction();
+		});
+		$("input:radio[name=q2_2_1]").click(function() {
+			myFunction();
+		});
+		$("input:radio[name=q2_3_2_1]").click(function() {
+			myFunction();
+		});
+		$("input:radio[name=q2_4_2_1_1]").click(function() {
+			myFunction();
+		});
+		$("input:radio[name=q2_4_2_2_1]").click(function() {
+			myFunction();
+		});
+		$("input:radio[name=q2_4_3_1]").click(function() {
+			myFunction();
+		});
+		$("input:radio[name=q2_5_1]").click(function() {
+			myFunction();
+		});
 	});
+	function myFunction() {
+		var ret = false;
+		var val = $('input:radio[name=q2_1_1]:checked').val();
+		if (val==="Yes") ret = true;
+		var val = $('input:radio[name=q2_2_1]:checked').val();
+		if (val==="Yes") ret = true;
+		var val = $('input:radio[name=q2_3_2_1]:checked').val();
+		if (val==="Yes") ret = true;
+		var val = $('input:radio[name=q2_4_2_1_1]:checked').val();
+		if (val==="Yes") ret = true;
+		var val = $('input:radio[name=q2_4_2_2_1]:checked').val();
+		if (val==="Yes") ret = true;
+		var val = $('input:radio[name=q2_4_3_1]:checked').val();
+		if (val==="Yes") ret = true;
+		var val = $('input:radio[name=q2_5_1]:checked').val();
+		if (val==="Yes") ret = true;
+		if (ret == true) {$('#q3div').show();$('#q4_4div').show();}
+		else {$('#q3div').hide();$('#q4_4div').hide();}
+		
+	}
 </script>
 <script>
 label:hover{cursor:pointer;}
@@ -556,7 +597,7 @@ p:hover{cursor:pointer;}
 								<h2 class="title">Section 3</h2>
 								
 								<br>
-								<div id="q3div" >
+								<div id="q3div" style="display:none;">
 								
 								<p>3.1.1 What's the phone number for customer to call when
 									they want to limit the sharing?</p>
@@ -848,7 +889,7 @@ safeguard personal information. ">4.2 How do you collect your customer's persona
 
 
 <!-- Text input-->
-<div class="form-group">
+<div id = "q4_4div" style="display:none;" class="form-group">
   <label class="col-md-4 control-label" title="  Only financial in
 stitutions that 
 provide opt-out options must
