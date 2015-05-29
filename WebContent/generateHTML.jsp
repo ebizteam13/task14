@@ -3,13 +3,13 @@
 <html>
 <head>
 <title>Privacy Form</title>
-<link href="css/bootstrap.min.css" rel="stylesheet">
-<link href="css/style.css" rel="stylesheet">
-
-<script type="text/javascript" src="js/jquery.min.js"></script>
-<script type="text/javascript" src="js/bootstrap.min.js"></script>
-<script type="text/javascript" src="js/scripts.js"></script>
-<script type="text/javascript" src="js/check.js">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+<!-- <link href="css/style.css" rel="stylesheet">
+ -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<!-- <script type="text/javascript" src="js/scripts.js"></script>
+<script type="text/javascript" src="js/check.js"> -->
 	
 </script>
 <script>
@@ -304,11 +304,11 @@ function myFunction() {
 				</td>
 				<td headers="undefined tbody_tr2_th1">
 					<p>We collect your personal information, for example, when you:</p>
-					<ul>
+					<%-- <ul>
 						<li>${??} or ${??} </li>
 						<li>${??}  or ${??} </li>
 						<li>${??} </li>
-					</ul>
+					</ul> --%>
 					<p>${q4_3}</p>
 				</td>
 			</tr>
