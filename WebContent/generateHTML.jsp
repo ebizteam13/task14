@@ -253,6 +253,8 @@ function myFunction() {
 				
 				
 				<!-- ****************************Start of Section 2************************************** -->
+				<br>
+				<br>
 				<table summary="Who we are" class="table" style="width: 100%;">
 		<colgroup>
 			<col width="15%" style="width: 15%;" />
@@ -263,6 +265,8 @@ function myFunction() {
 				<th id="thead1" colspan="2" rowspan="1">Who we are <br /></th>
 			</tr>
 		</thead>
+		
+		
 		<tbody>
 			<tr>
 				<td headers="thead1">
@@ -306,7 +310,7 @@ function myFunction() {
 					<p>We collect your personal information, for example, when you:</p>
 					<ul>
 					<c:forEach var="q4_2" items="${item.q4_2}">
-							<li>${item.q4_2}</li>
+							<li>${q4_2}</li>
 					</c:forEach>
 					</ul>
 					
@@ -323,7 +327,7 @@ function myFunction() {
 				<td headers="undefined tbody_tr2_th1">
 					<p>Federal law gives you the right to limit only:</p>
 					<ul>
-						<li>Sharing for affiliates' everyday business purposes —
+						<li>Sharing for affiliates' everyday business purposes -
 							information about your creditworthiness</li>
 						<li>Affiliates from using your information to market to you</li>
 						<li>Sharing for nonaffiliates to market to you</li>
@@ -346,6 +350,7 @@ function myFunction() {
 			</tr>
 		</tbody>
 	</table>
+	<br><br><br>
 	<table summary="Definitions" class="table" style="width: 100%;">
 		<colgroup>
 			<col width="15%" style="width: 15%;" />
