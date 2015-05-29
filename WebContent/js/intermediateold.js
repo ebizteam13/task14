@@ -90,176 +90,192 @@ function refill(){
 								    
 								    //section -2
 								    //first question
-								    if(str.q2_1=='Yes')
+								    if(str.q2_1=='y')
 								    {	    
 									  document.getElementById("q2_1y").checked=true;    
 									  document.getElementById("q2_1y").click();
 									}
-									else if(str.q2_1=='No')
+									else if(str.q2_1=='n')
 										document.getElementById("q2_1n").checked=true;
-								    if(str.q2_1_1=='Yes')
+								    if(str.q2_1_1=='y')
 								    {	    
 									  document.getElementById("q211y").checked=true;    
 									  document.getElementById("q211y").click();
 									}
-									else if(str.q2_1_1=='No')
+									else if(str.q2_1_1=='n')
 										document.getElementById("q211n").checked=true;
 								    
 								    
 								    //second question
-								    if(str.q2_2=='Yes')
+								    if(str.q2_2=='y')
 								    {	    
 									  document.getElementById("q22y").checked=true;    
 									  document.getElementById("q22y").click();
 									}
-									else if(str.q2_2=='No')
+									else if(str.q2_2=='n')
 										document.getElementById("q22n").checked=true;
-								    if(str.q2_2_1=='Yes')
+								    if(str.q2_2_1=='y')
 								    {	    
 									  document.getElementById("q221y").checked=true;    
 									  document.getElementById("q221y").click();
 									}
-									else if(str.q2_2_1=='No')
+									else if(str.q2_2_1=='n')
 										document.getElementById("q221n").checked=true;
 								    
 								    
 								    
 								    //third question
-								    if(str.q2_3=='Yes')
+								    if(str.q2_3=='y')
 								    {	    
 									  document.getElementById("q23y").checked=true;    
 									  document.getElementById("q23y").click();
 									}
-									else if(str.q2_3=='No')
+									else if(str.q2_3=='n')
 										document.getElementById("q23n").checked=true;
 								    
 								    if(document.getElementById("textarea231"))
 									    document.getElementById("textarea231").value=str.q2_3_1;
 								    
 								    
-								    if(str.q2_3_2=='Yes')
+								    if(str.q2_3_2=='y')
 								    {	    
 									  document.getElementById("q232y").checked=true;    
 									  document.getElementById("q232y").click();
 									}
-									else  if(str.q2_3_2=='No')
+									else  if(str.q2_3_2=='n')
 										document.getElementById("q232n").checked=true;
 										
-									if(str.q2_3_2_1=='Yes')
+									if(str.q2_3_2_1=='y')
 								    {	    
 									  document.getElementById("q2321y").checked=true;    
 									  document.getElementById("q2321y").click();
 									}
-									else if(str.q2_3_2_1=='No')
+									else if(str.q2_3_2_1=='n')
 										document.getElementById("q2321n").checked=true;	
 								
 								      
 							    //fourth question
-							    if(str.q2_4=='Yes')
+							    if(str.q2_4=='y')
 							    {	    
 								  document.getElementById("q24y").checked=true;    
 								  document.getElementById("q24y").click();
 								}
-								else if(str.q2_4=='No')
+								else if(str.q2_4=='n')
 									document.getElementById("q24n").checked=true;
 							
 								if(document.getElementById("q2_4_1"))
 									document.getElementById("textarea241").value=str.q2_4_1;
 							
-								if(str.q2_4_2=='Yes')
+								if(str.q2_4_2=='y')
 							    {	    
 								  document.getElementById("q242y").checked=true;    
 								  document.getElementById("q242y").click();
 								}
-								else if(str.q2_4_2=='No')
+								else if(str.q2_4_2=='n')
 									document.getElementById("q242n").checked=true;
 								
-								if(str.q2_4_2_1=='Yes')
+								if(str.q2_4_2_1=='y')
 							    {	    
 								  document.getElementById("q2421y").checked=true;    
 								  document.getElementById("q2421y").click();
 								}
-								else if(str.q2_4_2_1=='No')
+								else if(str.q2_4_2_1=='n')
 									document.getElementById("q2421n").checked=true;
 							
-								if(str.q2_4_2_1_1=='Yes')
+								if(str.q2_4_2_1_1=='y')
 							    {	    
 								  document.getElementById("q24211y").checked=true;    
 								  document.getElementById("q24211y").click();
 								}
-								else if(str.q2_4_2_1_1=='No')
+								else if(str.q2_4_2_1_1=='n')
 									document.getElementById("q24211n").checked=true;
 							
-								if(str.q2_4_2_2=='Yes')
+								if(str.q2_4_2_2=='y')
 							    {	    
 								  document.getElementById("q2422y").checked=true;    
 								  document.getElementById("q2422y").click();
 								}
-								else if(str.q2_4_2_2=='No')
+								else if(str.q2_4_2_2=='n')
 									document.getElementById("q2422n").checked=true;
 							
-								if(str.q2_4_2_2_1=='Yes')
+								if(str.q2_4_2_2_1=='y')
 							    {	    
 								  document.getElementById("q24221y").checked=true;    
 								  document.getElementById("q24221y").click();
 								}
-								else if(str.q2_4_2_2_1=='No')
+								else if(str.q2_4_2_2_1=='n')
 									document.getElementById("q24221n").checked=true;
 							
-								if(str.q2_4_3=='Yes')
+								if(str.q2_4_3=='y')
 							    {	    
 								  document.getElementById("q23y").checked=true;    
 								  document.getElementById("q23y").click();
 								}
-								else if(str.q2_4_3=='No')
+								else if(str.q2_4_3=='n')
 									document.getElementById("q23n").checked=true;
 							
 							
 							
-								if(str.q2_4_3_1=='Yes')
+								if(str.q2_4_3_1=='y')
 							    {	    
 								  document.getElementById("q2431y").checked=true;    
 								  document.getElementById("q2431y").click();
 								}
-								else if(str.q2_4_3_1=='No')
+								else if(str.q2_4_3_1=='n')
 									document.getElementById("q2431n").checked=true;
 							
-								if(str.q2_5=='Yes')
+								if(str.q2_5=='y')
 							    {	    
 								  document.getElementById("q25y").checked=true;    
 								  document.getElementById("q25y").click();
 								}
-								else if(str.q2_5=='No')
+								else if(str.q2_5=='n')
 									document.getElementById("q25n").checked=true;
 							
 							
-								if(str.q2_5_1=='Yes')
+								if(str.q2_5_1=='y')
 							    {	    
 								  document.getElementById("q251y").checked=true;    
 								  document.getElementById("q251y").click();
 								}
-								else if(str.q2_5_1=='No')
+								else if(str.q2_5_1=='n')
 									document.getElementById("q251n").checked=true;
-					   
+							
+							    
+							   
 							    
 							    //end of section -2
-      //section - 3
-					    	document.getElementById("q3_1").value=str.q3_1;
-					    	document.getElementById("q3_2").value=str.q3_2;
-							if(str.q3_1_1g=='Yes'){	    
-								  document.getElementById("q251y").checked=true;    
-								  document.getElementById("q251y").click();
-							}
-							else if(str.q3_1_1g=='No')
-									document.getElementById("q251n").checked=true;
+    
+    
+    
+    					  //section - 3
+				    	  //section - 3
+                            document.getElementById("q3_1").value=str.q3_1;
+                            document.getElementById("q3_2").value=str.q3_2;
+                            if(str.q3_1_1g=='y'){        
+                                  document.getElementById("q251y").checked=true;    
+                                  document.getElementById("q251y").click();
+                            }
+                            else if(str.q3_1_1g=='n')
+                                    document.getElementById("q251n").checked=true;
 
                             document.getElementById("q3_4").value=str.q3_4;
                             document.getElementById("q3_5").value=str.q3_5;
                             document.getElementById("q3_6").value=str.q3_6;
-                                                  
-           					   
+                            
+                            
+                              
+                       
+                        //end of section -3
+   
+					    	
+					          
+					   
 					    //end of section -3
-        
+    
+					      
+    
+    
 				    //seciton -4 
 				    document.getElementById("q4_1_1").value=str.q4_1_1;   
 				    if(str.q4_1_2!=null&&document.getElementById("q4_1_2")!=null)
@@ -296,8 +312,8 @@ function refill(){
 			    document.getElementById("textarea3").value=str.q5_3_2;       
 			    
 				var infinite_fields = str.q5_4;
-				for(var i=0;i<infinite_fields.length;i++)
-			    	document.getElementById("q5_4_"+(i+1)).value=infinite_fields[i];       
+				for(var i=0;i<infinite_fields.length;i++){}
+			    	//document.getElementById("q5_4_"+(i+1)).value=infinite_fields[i];       
 			    
 			    
 			    
