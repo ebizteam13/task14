@@ -46,6 +46,11 @@
 		});
 	});
 </script>
+<script>
+label:hover{cursor:pointer;}
+p:hover{cursor:pointer;}
+</script>
+
 </head>
 
 <body>
@@ -70,9 +75,9 @@
 							<!-- <li class="active"><a onclick="refill()" href="#">Generate</a></li> -->
 							<!-- <li><button id="singlebutton" name="submit" value="save" class="btn btn-primary" type="submit" >Save
 							</button></li> -->
-							<li class="active"><input id="file" onchange="refill()" type="file" >Generate</li>
+							<li class="active">Generate</li>
 							
-							<li><a onclick="import_file()" href="#">Import</a></li>
+							<li><input id="file" style="margin-left:30px;" class="btn btn-success" onchange="refill()" type="file" ></a></li>
 						</ul>
 
 						<ul class="nav navbar-nav navbar-right">
@@ -100,7 +105,7 @@
 						<div class="tab-content">
 							<div class="tab-pane active" id="panel-1">
 								<h2 class="title">Section 1</h2>
-								<p>1.1 What is the name of your financial institute?</p>
+								<p title="help text">1.1 What is the name of your financial institute?</p>
 								<input type="text" id="q1_1" onfocusout="setName()" name="q1_1"><br>
 								<br>
 								<p>1.2 What types of personal information do you want to
@@ -278,9 +283,9 @@
 								<div class="form-group">
 									<div class="col-md-4">
 										<label class="radio-inline" for="q21y"> <input
-											type="radio" name="q2_1" id="q2_1y" value="Yes" onclick="$('#q211div').show();"> Yes
+											type="radio" name="q2_1" id="q2_1y" value="y" onclick="$('#q211div').show();"> Yes
 										</label> <label class="radio-inline" for="q21n"> <input
-											type="radio" name="q2_1" id="q2_1n" value="No" onclick="$('#q211div').hide();"> No
+											type="radio" name="q2_1" id="q2_1n" value="n" onclick="$('#q211div').hide();"> No
 										</label>
 									</div>
 									<br> <br>
@@ -292,9 +297,9 @@
 								<div class="form-group">
 									<div class="col-md-4">
 										<label class="radio-inline" for="q211y"> <input
-											type="radio" name="q2_1_1" id="q211y" value="Yes"> Yes
+											type="radio" name="q2_1_1" id="q211y" value="y"> Yes
 										</label> <label class="radio-inline" for="q21n"> <input
-											type="radio" name="q2_1_1" id="q211n" value="No"> No
+											type="radio" name="q2_1_1" id="q211n" value="n"> No
 										</label>
 									</div>
 								</div>
@@ -306,9 +311,9 @@
 								<div class="form-group">
 									<div class="col-md-4">
 										<label class="radio-inline" for="q22y"> <input
-											type="radio" name="q2_2" id="q22y" value="Yes" onclick="$('#q221div').show();"> Yes
+											type="radio" name="q2_2" id="q22y" value="y" onclick="$('#q221div').show();"> Yes
 										</label> <label class="radio-inline" for="q22n"> <input
-											type="radio" name="q2_2" id="q22n" value="No" onclick="$('#q221div').hide();"> No
+											type="radio" name="q2_2" id="q22n" value="n" onclick="$('#q221div').hide();"> No
 										</label>
 									</div>
 									<br> <br>
@@ -319,9 +324,9 @@
 								<div class="form-group">
 									<div class="col-md-4">
 										<label class="radio-inline" for="q221y"> <input
-											type="radio" name="q2_2_1" id="q221y" value="Yes"> Yes
+											type="radio" name="q2_2_1" id="q221y" value="y"> Yes
 										</label> <label class="radio-inline" for="q221n"> <input
-											type="radio" name="q2_2_1" id="q221n" value="No"> No
+											type="radio" name="q2_2_1" id="q221n" value="n"> No
 										</label>
 									</div>
 									<br> <br>
@@ -333,10 +338,10 @@
 									<div class="form-group">
 										<div class="col-md-4">
 											<label class="radio-inline" for="q231y"> <input
-												type="radio" name="q2_3" id="q23y" value="Yes" onclick="$('#q23div').show();">
+												type="radio" name="q2_3" id="q23y" value="y" onclick="$('#q23div').show();">
 												Yes
 											</label> <label class="radio-inline" for="q231n"> <input
-												type="radio" name="q2_3" id="q23n" value="No" onclick="$('#q23div').hide();"> No
+												type="radio" name="q2_3" id="q23n" value="n" onclick="$('#q23div').hide();"> No
 											</label>
 										</div>
 									</div>
@@ -356,10 +361,10 @@
 									<div class="form-group">
 										<div class="col-md-4">
 											<label class="radio-inline" for="q232y"> <input
-												type="radio" name="q2_3_2" id="q232y" value="Yes" onclick="$('#q2321div').show();">
+												type="radio" name="q2_3_2" id="q232y" value="y" onclick="$('#q2321div').show();">
 												Yes
 											</label> <label class="radio-inline" for="q232n"> <input
-												type="radio" name="q2_3_2" id="q232n" value="No" onclick="$('#q2321div').hide();"> No
+												type="radio" name="q2_3_2" id="q232n" value="n" onclick="$('#q2321div').hide();"> No
 											</label>
 										</div>
 									</div>
@@ -371,10 +376,10 @@
 									<div class="form-group">
 										<div class="col-md-4">
 											<label class="radio-inline" for="q2321y"> <input
-												type="radio" name="q2_3_2_1" id="q2321y" value="Yes">
+												type="radio" name="q2_3_2_1" id="q2321y" value="y">
 												Yes
 											</label> <label class="radio-inline" for="q2321n"> <input
-												type="radio" name="q2_3_2_1" id="q2321n" value="No"> No
+												type="radio" name="q2_3_2_1" id="q2321n" value="n"> No
 											</label>
 										</div>
 									</div>
@@ -387,10 +392,10 @@
 									<div class="form-group">
 										<div class="col-md-4">
 											<label class="radio-inline" for="q24y"> <input
-												type="radio" name="q2_4" id="q24y" value="Yes" onclick="$('#q24div').show();">
+												type="radio" name="q2_4" id="q24y" value="y" onclick="$('#q24div').show();">
 												Yes
 											</label> <label class="radio-inline" for="q24n"> <input
-												type="radio" name="q2_4" id="q24n" value="No" onclick="$('#q24div').hide();"> No
+												type="radio" name="q2_4" id="q24n" value="n" onclick="$('#q24div').hide();"> No
 											</label>
 										</div>
 									</div>
@@ -410,10 +415,10 @@
 									<div class="form-group">
 										<div class="col-md-4">
 											<label class="radio-inline" for="q242y"> <input
-												type="radio" name="q2_4_2" id="q242y" value="Yes" onclick="$('#q242div').show();">
+												type="radio" name="q2_4_2" id="q242y" value="y" onclick="$('#q242div').show();">
 												Yes
 											</label> <label class="radio-inline" for="q242y"> <input
-												type="radio" name="q2_4_2" id="q242y" value="No" onclick="$('#q242div').hide();"> No
+												type="radio" name="q2_4_2" id="q242y" value="n" onclick="$('#q242div').hide();"> No
 											</label>
 										</div>
 									</div>
@@ -425,10 +430,10 @@
 									<div class="form-group">
 										<div class="col-md-4">
 											<label class="radio-inline" for="q2421y"> <input
-												type="radio" name="q2_4_2_1" id="q2421y" value="Yes" onclick="$('#q24211div').show();">
+												type="radio" name="q2_4_2_1" id="q2421y" value="y" onclick="$('#q24211div').show();">
 												Yes
 											</label> <label class="radio-inline" for="q2421n"> <input
-												type="radio" name="q2_4_2_1" id="q2421n" value="No" onclick="$('#q24211div').hide();"> No
+												type="radio" name="q2_4_2_1" id="q2421n" value="n" onclick="$('#q24211div').hide();"> No
 											</label>
 										</div>
 									</div>
@@ -440,10 +445,10 @@
 									<div class="form-group">
 										<div class="col-md-4">
 											<label class="radio-inline" for="q24211y"> <input
-												type="radio" name="q2_4_2_1_1" id="q24211y" value="Yes">
+												type="radio" name="q2_4_2_1_1" id="q24211y" value="y">
 												Yes
 											</label> <label class="radio-inline" for="q24211n"> <input
-												type="radio" name="q2_4_2_1_1" id="q24211n" value="No"> No
+												type="radio" name="q2_4_2_1_1" id="q24211n" value="n"> No
 											</label>
 										</div>
 									</div>
@@ -455,10 +460,10 @@
 									<div class="form-group">
 										<div class="col-md-4">
 											<label class="radio-inline" for="q2422y"> <input
-												type="radio" name="q2_4_2_2" id="q2422y" value="Yes" onclick="$('#q24221div').show();">
+												type="radio" name="q2_4_2_2" id="q2422y" value="y" onclick="$('#q24221div').show();">
 												Yes
 											</label> <label class="radio-inline" for="q2422n"> <input
-												type="radio" name="q2_4_2_2" id="q2422n" value="No" onclick="$('#q24221div').hide();"> No
+												type="radio" name="q2_4_2_2" id="q2422n" value="n" onclick="$('#q24221div').hide();"> No
 											</label>
 										</div>
 									</div>
@@ -470,10 +475,10 @@
 									<div class="form-group">
 										<div class="col-md-4">
 											<label class="radio-inline" for="q24221y"> <input
-												type="radio" name="q2_4_2_2_1" id="q24221y" value="Yes">
+												type="radio" name="q2_4_2_2_1" id="q24221y" value="y">
 												Yes
 											</label> <label class="radio-inline" for="q24221n"> <input
-												type="radio" name="q2_4_2_2_1" id="q24221n" value="No"> No
+												type="radio" name="q2_4_2_2_1" id="q24221n" value="n"> No
 											</label>
 										</div>
 									</div>
@@ -486,10 +491,10 @@
 									<div class="form-group">
 										<div class="col-md-4">
 											<label class="radio-inline" for="q23"> <input
-												type="radio" name="q2_4_3" id="q23y" value="Yes" onclick="$('#q2431div').show();">
+												type="radio" name="q2_4_3" id="q23y" value="y" onclick="$('#q2431div').show();">
 												Yes
 											</label> <label class="radio-inline" for="q22n"> <input
-												type="radio" name="q2_4_3" id="q23n" value="No" onclick="$('#q2431div').hide();"> No
+												type="radio" name="q2_4_3" id="q23n" value="n" onclick="$('#q2431div').hide();"> No
 											</label>
 										</div>
 									</div>
@@ -501,10 +506,10 @@
 									<div class="form-group">
 										<div class="col-md-4">
 											<label class="radio-inline" for="q2431y"> <input
-												type="radio" name="q2_4_3_1" id="q2431y" value="Yes">
+												type="radio" name="q2_4_3_1" id="q2431y" value="y">
 												Yes
 											</label> <label class="radio-inline" for="q2431n"> <input
-												type="radio" name="q2_4_3_1" id="q2431n" value="No"> No
+												type="radio" name="q2_4_3_1" id="q2431n" value="n"> No
 											</label>
 										</div>
 									</div>
@@ -516,10 +521,10 @@
 									<div class="form-group">
 										<div class="col-md-4">
 											<label class="radio-inline" for="q25y"> <input
-												type="radio" name="q2_5" id="q25y" value="Yes" onclick="$('#q251div').show();">
+												type="radio" name="q2_5" id="q25y" value="y" onclick="$('#q251div').show();">
 												Yes
 											</label> <label class="radio-inline" for="q25n"> <input
-												type="radio" name="q2_5" id="q25n" value="No" onclick="$('#q251div').hide();"> No
+												type="radio" name="q2_5" id="q25n" value="n" onclick="$('#q251div').hide();"> No
 											</label>
 										</div>
 									</div>
@@ -530,10 +535,10 @@
 									<div class="form-group">
 										<div class="col-md-4">
 											<label class="radio-inline" for="q251y"> <input
-												type="radio" name="q2_5_1" id="q251y" value="Yes">
+												type="radio" name="q2_5_1" id="q251y" value="y">
 												Yes
 											</label> <label class="radio-inline" for="q251n"> <input
-												type="radio" name="q2_5_1" id="q251n" value="No"> No
+												type="radio" name="q2_5_1" id="q251n" value="n"> No
 											</label>
 										</div>
 									</div>
@@ -565,10 +570,10 @@
 									<div class="form-group">
 										<div class="col-md-4">
 											<label class="radio-inline" for="q311y"> <input
-												type="radio" name="q3_1_1g" id="q311y" value="Yes" onclick="$('#q3131div').show();">
+												type="radio" name="q3_1_1g" id="q311y" value="y" onclick="$('#q3131div').show();">
 												Yes
 											</label> <label class="radio-inline" for="q311n"> <input
-												type="radio" name="q3_1_1g" id="q311n" value="No" onclick="$('#q3131div').hide();"> 
+												type="radio" name="q3_1_1g" id="q311n" value="n" onclick="$('#q3131div').hide();"> 
 												No
 											</label>
 										</div>
@@ -616,11 +621,29 @@
 
 <!-- Text input-->
 <div id="first_field" class="form-group">
-  <label class="col-md-4 control-label" for="textinput">4.1 Who is providing this notice?</label>  
+  <label title=" This question may be 
+omitted where only one financia
+l institution provides the 
+model form and that institution is
+ clearly identified in the title 
+on page one.  Two or more financia
+l institutions that jointly 
+provide the model form must 
+use this question to identify 
+themselves as required by § 313.
+9(f) of this part."class="col-md-4 control-label" for="textinput">4.1 Who is providing this notice?</label>  
   <!-- <input id="textinput" name="textinput" placeholder="placeholder"  class="form-control input-md" required="" type="text">
      --><textarea name="q4_1_1" class="form-control"  oninput="check_lines('first_field')" id="q4_1_1" style="width: 762px;" ></textarea>
   </div>
-<label  for="selectmultiple">4.2 How do you collect your customer's personal information (Select 5 options)</label>
+<label  for="selectmultiple" title=" The financial institution may only 
+provide additional information 
+pertaining to its safeguards 
+practices following the designated 
+response to this question.  
+Such information may include information about the 
+institution’s use of cookies or
+ other measures it uses to 
+safeguard personal information. ">4.2 How do you collect your customer's personal information (Select 5 options)</label>
   
 <div class="form-group" onfocusout="check()" id="selectmultiple">
 								<div class="col-md-4">
@@ -826,7 +849,22 @@
 
 <!-- Text input-->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="textinput">4.4 What happens when the customer limits sharing for an account held jointly with someone else?</label>  
+  <label class="col-md-4 control-label" title="  Only financial in
+stitutions that 
+provide opt-out options must
+ use this question.  Other 
+institutions must omit this questi
+on.  Institutions must choose 
+one of the following two statem
+ents to respond to this 
+question:  “Your choices will apply to everyone on your 
+account.” or “Your choices will apply to everyone on your 
+account–unless you tell us otherwise.”  Financial institutions 
+that provide insurance products 
+or services and elect to use 
+the model form may substitute th
+e word “policy” for “account” 
+in these statements. " for="textinput">4.4 What happens when the customer limits sharing for an account held jointly with someone else?</label>  
 
   <input id="q4_4" style="width: 762px;" name="q4_4" placeholder="placeholder" class="form-control input-md" type="text">
     
@@ -914,7 +952,16 @@
 									</br>
 									<!-- input Answer text ends -->
 
-									<label for="textarea">Enter Other Important Information</label>(Use
+									<label title="this 
+box is optional.  The space provided for information in this box is 
+not limited.  Only the following ty
+pes of information can appear in 
+this box. 
+(1) 
+State and/or international 
+privacy law information; and/or 
+(2) 
+Acknowledgment of receipt form. " for="textarea">Enter Other Important Information</label>(Use
 									add more to add multiple. Don't write all information at a
 									time)</br> <span>
 										<div id="amey" class="col-md-10">
