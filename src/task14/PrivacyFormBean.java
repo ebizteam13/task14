@@ -25,30 +25,10 @@ public class PrivacyFormBean extends FormBean{
 	String q2_4_3;//radio
 	String q2_4_3_1 = "We don\'t share";
 	String q2_5;
-<<<<<<< Updated upstream
 	String q2_5_1 = "We don\'t share";//radio
 	String q3;
-	String q3_1 = "";
-	String q3_2 = "";
-	String q3_3 = "";
-	String q3_4 = "";
-	String q3_5 = "";
-	String q3_6 = "";
-=======
-	String q2_5_1;//radio
+
 	
-	/*changes from
-	String q3;
-	String q3_1;
-	String q3_2;
-	String q3_3;
-	String q3_4;
-	String q3_5;
-	String q3_6;
-	to
-	*/
-	
-	//String q3;(Deleted)
 	String q3_1;
 	String q3_2;
 	String q3_1_1g;//radio (Add)
@@ -59,9 +39,6 @@ public class PrivacyFormBean extends FormBean{
 	String q3_6;
 	
 	
-	// 
-	
->>>>>>> Stashed changes
 	String q4_1_1;
 	String q4_2[];//check box
 	String q4_3;
@@ -206,14 +183,6 @@ public class PrivacyFormBean extends FormBean{
 		this.q2_5_1 = q2_5_1;
 	}
 	
-	/* Deleted part
-	public String getQ3() {
-		return q3;
-	}
-	public void setQ3(String q3) {
-		this.q3 = q3;
-	}
-	*/
 	
 
 	public String getQ3_1_1g() {

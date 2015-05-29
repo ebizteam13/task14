@@ -33,7 +33,7 @@ function myFunction() {
 
 <body>
 
-<a id="export" class="myButton" download="" href="#">export</a>
+<a id="export" class="btn" download="" href="#">export</a>
 	<div class="container">
 		<div class="row clearfix">
 			<div class="col-md-12 column">
@@ -253,7 +253,7 @@ function myFunction() {
 				
 				
 				<!-- ****************************Start of Section 2************************************** -->
-				<table summary="Who we are" class="c69Table" style="width: 100%;">
+				<table summary="Who we are" class="table" style="width: 100%;">
 		<colgroup>
 			<col width="15%" style="width: 15%;" />
 			<col width="85%" style="width: 85%;" />
@@ -304,24 +304,26 @@ function myFunction() {
 				</td>
 				<td headers="undefined tbody_tr2_th1">
 					<p>We collect your personal information, for example, when you:</p>
-					<%-- <ul>
-						<li>${??} or ${??} </li>
-						<li>${??}  or ${??} </li>
-						<li>${??} </li>
-					</ul> --%>
+					<ul>
+					<c:forEach var="q4_2" items="${item.q4_2}">
+							<li>${q4_2}</li>
+					</c:forEach>
+					</ul>
+					
+					
 					<p>${q4_3}</p>
 				</td>
 			</tr>
 			<tr>
 				<td headers="thead1 tbody_tr2_th1">
 					<p>
-						<strong>Why can’t I limit all sharing?</strong>
+						<strong>Why can't I limit all sharing?</strong>
 					</p>
 				</td>
 				<td headers="undefined tbody_tr2_th1">
 					<p>Federal law gives you the right to limit only:</p>
 					<ul>
-						<li>Sharing for affiliates’ everyday business purposes —
+						<li>Sharing for affiliates' everyday business purposes —
 							information about your creditworthiness</li>
 						<li>Affiliates from using your information to market to you</li>
 						<li>Sharing for nonaffiliates to market to you</li>
@@ -344,7 +346,7 @@ function myFunction() {
 			</tr>
 		</tbody>
 	</table>
-	<table summary="Definitions" class="c69Table" style="width: 100%;">
+	<table summary="Definitions" class="table" style="width: 100%;">
 		<colgroup>
 			<col width="15%" style="width: 15%;" />
 			<col width="85%" style="width: 85%;" />
@@ -401,7 +403,7 @@ function myFunction() {
 			</tr>
 		</tbody>
 	</table>
-	<table summary="Other important information" class="c69Table"
+	<table summary="Other important information" class="table"
 		style="width: 100%;">
 		<thead>
 			<tr>
