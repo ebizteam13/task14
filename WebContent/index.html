@@ -119,9 +119,11 @@ p:hover{cursor:pointer;}
 							<!-- <li class="active"><a onclick="refill()" href="#">Generate</a></li> -->
 							<!-- <li><button id="singlebutton" name="submit" value="save" class="btn btn-primary" type="submit" >Save
 							</button></li> -->
-							<li class="active">Generate</li>
-							
-							<li><input id="file" style="margin-left:30px;" class="btn btn-success" onchange="refill()" type="file" ></a></li>
+							<!-- <li class="active">Generate</li>
+							 -->
+							<!-- <li><input id="file" style="margin-left:30px;" class="btn btn-success" onchange="refill()" type="file" ></a></li>
+							 -->
+							<!-- <li></li> -->
 						</ul>
 
 						<ul class="nav navbar-nav navbar-right">
@@ -130,6 +132,10 @@ p:hover{cursor:pointer;}
 					</div>
 
 				</nav>
+				 <div class="fileUpload btn btn-primary"> <span>Upload</span> <input type="file" id="file" onchange="refill()" class="upload" /></div>
+						<button id="singlebutton" name="submit" value="save" type="submit" class="btn btn-success">Save</button>
+						<button id="generateHTMLbutton" name="submit" value="generate" type="submit" class="btn btn-success">Generate</button>
+				
 				<div class="tabbable" id="tabs-739093">
 					
 						<ul class="nav nav-tabs">
@@ -142,9 +148,7 @@ p:hover{cursor:pointer;}
 						</ul>
 
 						<br>
-						<button id="singlebutton" name="submit" value="save" type="submit" class="btn btn-success">Save</button>
-						<button id="generateHTMLbutton" name="submit" value="generate" type="submit" class="btn btn-success">Generate</button>
-
+						
 						
 						<div class="tab-content">
 							<div class="tab-pane active" id="panel-1">
