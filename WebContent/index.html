@@ -36,6 +36,8 @@
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/scripts.js"></script>
 <script type="text/javascript" src="js/check.js"> </script>
+<script type="text/javascript" src="js/bootstrap-datepicker.min.js"></script>
+
 <script>
 	$(document).ready(function() {
 		$('.btnBack').click(function() {
@@ -65,6 +67,7 @@
 		$("input:radio[name=q2_5_1]").click(function() {
 			myFunction();
 		});
+		$('.datepicker').datepicker();
 	});
 	function myFunction() {
 		var ret = false;
@@ -146,12 +149,14 @@ p:hover{cursor:pointer;}
 						<div class="tab-content">
 							<div class="tab-pane active" id="panel-1">
 								<h2 class="title">Section 1</h2>
-								<p title="help text">1.1 What is the name of your financial institute?</p>
+								<label title="Insert the name of the financial institution providing the notice or a common identity of affiliated institutions jointly providing the notice on the form wherever [name of financial institution] appears. " for="textarea">1.1 What is the name of your financial institute?</label>
+								<br>
 								<input type="text" id="q1_1" onfocusout="setName()" name="q1_1"><br>
 								<br>
-								<p>1.2 What types of personal information do you want to
+								<label title="The bulleted list identifies the types of personal information that the institution collects and shares. " for="textarea">1.2 What types of personal information do you want to
 									collect and share depend on the product or service clients have
-									with you (include at least five):</p>
+									with you (include at least five):</label>
+								<br>
 								<div class="form-group">
 								<div class="col-md-4">
 								<div class="checkbox">
@@ -307,20 +312,33 @@ p:hover{cursor:pointer;}
 									</div>
 								</div>
 								
-								<div style="margin-top: 250px;">
-								<p>1.3 Whose Information are you sharing?</p>
-								<input type="text" id="q1_3" placeholder="e.g.customers" name="q1_3"><br> <br>
+								<div style="margin-top: 220px;">
+								<label title="The name of the target reader of the notice for example customers" for="textarea">1.3 Whose Information are you sharing?</label>
+								<br>
+								
+								<input type="text" id="q1_3" placeholder="e.g.customers" name="q1_3"><br>
+								</div>
+								<br> 
+								<div>
+								<label title="The financial institution must insert in the upper right-hand corner the date on which the notice was last revised." for="textarea">1.4 Date last revised?</label>
+								<br>
+								
+								<input data-provide="datepicker">  <br><br>
 								</div>
 								<button type="button" class="btn btn-primary btnNext">Next</button>
 
 								<br> <br>
+								
+								
 
 
 							</div>
 							<div class="tab-pane" id="panel-2">
 								<h2 class="title">Section 2</h2>
-								<p>2.1 Do you share your customers' personal information for
-									your everyday business purposes?</p>
+								<label title="This reason incorporates sharing information under §§ 313.14 and 313.15 and with service providers pursuant to § 313.13 of 201 this part other than the purposes specified in paragraphs C.2(d)(2) or C.2(d)(3) of these Instructions." for="textarea">2.1 Do you share your customers' personal information for
+									your everyday business purposes?</label>
+								<br>
+								
 								<div class="form-group">
 									<div class="col-md-4">
 										<label class="radio-inline" for="q21y"> <input
@@ -333,8 +351,10 @@ p:hover{cursor:pointer;}
 								</div>
 								
 								<div id="q211div" style="display:none;">
-								<p>2.1.1 Can customers limit their sharing of personal information for
-									your everyday business purposes?</p>
+								<label title="This reason incorporates sharing information under §§ 313.14 and 313.15 and with service providers pursuant to § 313.13 of 201 this part other than the purposes specified in paragraphs C.2(d)(2) or C.2(d)(3) of these Instructions." for="textarea">2.1.1 Can customers limit their sharing of personal information for
+									your everyday business purposes?</label>
+								<br>
+								
 								<div class="form-group">
 									<div class="col-md-4">
 										<label class="radio-inline" for="q211y"> <input
@@ -346,9 +366,11 @@ p:hover{cursor:pointer;}
 								</div>
 								<br> <br>
 								</div>
+								<label title="This reason incorporates
+sharing information with service providers by an institution for its own marketing pursuant to § 313.13 of this part. An institution that shares for this reason may choose to provide an opt-out." for="textarea">2.2 Do you share your customers' personal information for
+									your marketing purposes?</label>
+								<br>
 								
-								<p>2.2 Do you share your customers' personal information for
-									your marketing purposes?</p>
 								<div class="form-group">
 									<div class="col-md-4">
 										<label class="radio-inline" for="q22y"> <input
@@ -360,8 +382,10 @@ p:hover{cursor:pointer;}
 									<br> <br>
 								</div>
 								<div id="q221div" style="display:none;">
-								<p>2.2.1 Can customers limit their sharing of personal information for
-									your marketing purposes?</p>
+								<label title="This reason incorporates
+sharing information with service providers by an institution for its own marketing pursuant to § 313.13 of this part. An institution that shares for this reason may choose to provide an opt-out." for="textarea">2.2.1 Can customers limit their sharing of personal information for
+									your marketing purposes?</label>
+								<br>
 								<div class="form-group">
 									<div class="col-md-4">
 										<label class="radio-inline" for="q221y"> <input
@@ -375,7 +399,9 @@ p:hover{cursor:pointer;}
 								</div>
 								
 								<div>
-									<p>2.3 Do you engage in joint marketing?</p>
+								<label title="This reason incorporates sharing information under joint marketing agreements between two or more financial institutions and with any service provider used in connection with such agreements pursuant to § 313.13 of this part. An institution that shares for this reason may choose to provide an opt-out." for="textarea">2.3 Do you engage in joint marketing?</label>
+								<br>
+									
 									<div class="form-group">
 										<div class="col-md-4">
 											<label class="radio-inline" for="q231y"> <input
@@ -389,16 +415,18 @@ p:hover{cursor:pointer;}
 
 									<br> <br>
 									<div id="q23div" style="display:none;">
-									<p>2.3.1 Please provide the information of your joint marketing partners?</p>
+									<label title="" for="textarea">2.3.1 Please provide the information of your joint marketing partners?</label>
+								<br>
 									 <div class="col-md-6">   
 									<textarea class="form-control" id="textarea231" name="q2_3_1"></textarea>
 									 </div> 
 									 <br> <br><br> <br>
 									
 									
+									<label title="This reason incorporates sharing information under joint marketing agreements between two or more financial institutions and with any service provider used in connection with such agreements pursuant to § 313.13 of this part. An institution that shares for this reason may choose to provide an opt-out." for="textarea">2.3.2 Do you share your customers' personal information for
+									joint marketing partners?</label>
+								<br>
 									
-									<p>2.3.2 Do you share your customers' personal information for
-									joint marketing partners?</p>
 									<div class="form-group">
 										<div class="col-md-4">
 											<label class="radio-inline" for="q232y"> <input
@@ -412,8 +440,10 @@ p:hover{cursor:pointer;}
 
 									<br> <br>
 									<div id="q2321div" style="display:none;">
-									<p>2.3.2.1 Can customers limit the sharing of their personal information for your
-									joint marketing partners?</p>
+									<label title="This reason incorporates sharing information under joint marketing agreements between two or more financial institutions and with any service provider used in connection with such agreements pursuant to § 313.13 of this part. An institution that shares for this reason may choose to provide an opt-out." for="textarea">2.3.2.1 Can customers limit the sharing of their personal information for your
+									joint marketing partners?</label>
+								<br>
+									
 									<div class="form-group">
 										<div class="col-md-4">
 											<label class="radio-inline" for="q2321y"> <input
@@ -429,7 +459,9 @@ p:hover{cursor:pointer;}
 
 									
 									</div>
-									<p>2.4 Do you have affiliates?</p>
+									<label title="information about transactions and experiences. This reason incorporates sharing information specified in sections 603(d)(2)(A)(i) and (ii) of the FCRA. An institution that shares for this reason may choose to provide an opt-out." for="textarea">2.4 Do you have affiliates?</label>
+								<br>
+									
 									<div class="form-group">
 										<div class="col-md-4">
 											<label class="radio-inline" for="q24y"> <input
@@ -443,16 +475,19 @@ p:hover{cursor:pointer;}
 
 									<br> <br>
 									<div id="q24div" style="display:none;">
-									<p>2.4.1 Please provide the information of your affiliates?</p>
+									<label title="" for="textarea">2.4.1 Please provide the information of your affiliates?</label>
+								<br>
+									
 									 <div class="col-md-6">   
 									<textarea class="form-control" id="textarea241" name="q2_4_1"></textarea>
 									 </div> 
 									
 									
 									<br> <br><br> <br>
+									<label title="information about transactions and experiences. This reason incorporates sharing information specified in sections 603(d)(2)(A)(i) and (ii) of the FCRA. An institution that shares for this reason may choose to provide an opt-out." for="textarea">2.4.2 Do you share your customers' personal information for
+									your affiliates' everyday business purpose?</label>
+								<br>
 									
-									<p>2.4.2 Do you share your customers' personal information for
-									your affiliates' everyday business purpose?</p>
 									<div class="form-group">
 										<div class="col-md-4">
 											<label class="radio-inline" for="q242y"> <input
@@ -466,8 +501,10 @@ p:hover{cursor:pointer;}
 
 									<br> <br>
 									<div id="q242div" style="display:none;">
-									<p>2.4.2.1 Do you share your customers' personal information about transactions and experiences for
-									your affiliates' everyday business purpose?</p>
+									<label title="information about transactions and experiences. This reason incorporates sharing information specified in sections 603(d)(2)(A)(i) and (ii) of the FCRA. An institution that shares for this reason may choose to provide an opt-out." for="textarea">2.4.2.1 Do you share your customers' personal information about transactions and experiences for
+									your affiliates' everyday business purpose?</label>
+								<br>
+									
 									<div class="form-group">
 										<div class="col-md-4">
 											<label class="radio-inline" for="q2421y"> <input
@@ -481,8 +518,10 @@ p:hover{cursor:pointer;}
 
 									<br> <br>
 									<div id="q24211div" style="display:none;">
-									<p>2.4.2.1.1 Can customers limit their sharing of personal information about transactions and experiences for
-									your affiliates' everyday business purpose?</p>
+									<label title="information about transactions and experiences. This reason incorporates sharing information specified in sections 603(d)(2)(A)(i) and (ii) of the FCRA. An institution that shares for this reason may choose to provide an opt-out." for="textarea">2.4.2.1.1 Can customers limit their sharing of personal information about transactions and experiences for
+									your affiliates' everyday business purpose?</label>
+								<br>
+									
 									<div class="form-group">
 										<div class="col-md-4">
 											<label class="radio-inline" for="q24211y"> <input
@@ -496,8 +535,11 @@ p:hover{cursor:pointer;}
 
 									<br> <br>
 									</div>
-									<p>2.4.2.2 Do you share your customers' personal information about creditworthiness for
-									your affiliates' everyday business purpose?</p>
+									<label title="information about creditworthiness. This reason incorporates sharing information pursuant to section 603(d)(2)(A)(iii) of the FCRA. An institution that shares for this reason must provide an opt- out.
+									" for="textarea">2.4.2.2 Do you share your customers' personal information about creditworthiness for
+									your affiliates' everyday business purpose?</label>
+								<br>
+									
 									<div class="form-group">
 										<div class="col-md-4">
 											<label class="radio-inline" for="q2422y"> <input
@@ -511,8 +553,11 @@ p:hover{cursor:pointer;}
 
 									<br> <br>
 									<div id="q24221div" style="display:none;">
-									<p>2.4.2.2.1 Can customers limit their sharing of personal information about creditworthiness for
-									your affiliates' everyday business purpose?</p>
+									<label title="information about creditworthiness. This reason incorporates sharing information pursuant to section 603(d)(2)(A)(iii) of the FCRA. An institution that shares for this reason must provide an opt- out.
+									" for="textarea">2.4.2.2.1 Can customers limit their sharing of personal information about creditworthiness for
+									your affiliates' everyday business purpose?</label>
+								<br>
+									
 									<div class="form-group">
 										<div class="col-md-4">
 											<label class="radio-inline" for="q24221y"> <input
@@ -527,8 +572,10 @@ p:hover{cursor:pointer;}
 									<br> <br>
 									</div>
 									</div>
-									<p>2.4.3 Do you share your customers' personal information for
-									your affiliates' marketing purpose?</p>
+									<label title="This reason incorporates sharing information specified in section 624 of the FCRA. This reason may be omitted from the disclosure table when: the institution does not have affiliates (or does not disclose personal information to its affiliates)" for="textarea">2.4.3 Do you share your customers' personal information for
+									your affiliates' marketing purpose?</label>
+								<br>
+									
 									<div class="form-group">
 										<div class="col-md-4">
 											<label class="radio-inline" for="q23"> <input
@@ -542,8 +589,10 @@ p:hover{cursor:pointer;}
 
 									<br> <br>
 									<div id="q2431div" style="display:none;">
-									<p>2.4.3.1 Can customers limit the sharing of their personal information for
-									your affiliates' marketing purpose?</p>
+									<label title="This reason incorporates sharing information specified in section 624 of the FCRA. This reason may be omitted from the disclosure table when: the institution does not have affiliates (or does not disclose personal information to its affiliates)" for="textarea">2.4.3.1 Can customers limit the sharing of their personal information for
+									your affiliates' marketing purpose?</label>
+								<br>
+									
 									<div class="form-group">
 										<div class="col-md-4">
 											<label class="radio-inline" for="q2431y"> <input
@@ -558,7 +607,9 @@ p:hover{cursor:pointer;}
 									<br> <br>
 									</div>
 									</div>
-									<p>2.5 Do you share your customers' personal information for nonaffiliates to market to them?</p>
+									<label title="This reason incorporates sharing described in §§ 313.7 and 313.10(a) of this part. An institution that shares personal information for this reason must provide an opt-out." for="textarea">2.5 Do you share your customers' personal information for nonaffiliates to market to them?</label>
+								<br>
+									
 									<div class="form-group">
 										<div class="col-md-4">
 											<label class="radio-inline" for="q25y"> <input
@@ -572,7 +623,8 @@ p:hover{cursor:pointer;}
 
 									<br> <br>
 									<div id="q251div" style="display:none;">
-									<p>2.5.1 Can customers limit the sharing of their personal information for nonaffiliates to market to them?</p>
+									<label title="This reason incorporates sharing described in §§ 313.7 and 313.10(a) of this part. An institution that shares personal information for this reason must provide an opt-out." for="textarea">2.5.1 Can customers limit the sharing of their personal information for nonaffiliates to market to them?</label>
+								<br>
 									<div class="form-group">
 										<div class="col-md-4">
 											<label class="radio-inline" for="q251y"> <input

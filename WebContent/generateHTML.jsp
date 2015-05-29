@@ -64,7 +64,9 @@ function createEmailLink(){
 			<br><br>
 			<a id="export" class="btn btn-success" download="" href="#">export</a>
 			<br><br>
-				
+				<p>
+					<em>This policy is effective as of May 13, 2015.</em>
+				</p>
 				<table
 					summary="WHAT DOES ${item.q1_1} DO WITH YOUR PERSONAL INFORMATION?"
 					class="table" style="width: 100%;">
