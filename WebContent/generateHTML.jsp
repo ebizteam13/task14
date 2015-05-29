@@ -12,12 +12,28 @@
 <script type="text/javascript" src="js/check.js">
 	
 </script>
+<script>
+function myFunction() {
+	
+	function createDownloadLink(anchorSelector){
+		
+		
+			var url = "data:text/plain;charset=utf-8," + encodeURIComponent();
+			$(anchorSelector).attr("href", url);
+		
+	}
+
+	$(function () {
+		createDownloadLink("#export");
+	});
+}
+</script>
 <meta charset="utf-8">
 </head>
 
 <body>
 
-<button id="singlebutton" name="submit" value="save" type="button" class="btn btn-success" onclick="window.document.execCommand('SaveAs', true, form.html)">Save</button>
+<a id="export" class="myButton" download="" href="#">export</a>
 	<div class="container">
 		<div class="row clearfix">
 			<div class="col-md-12 column">
