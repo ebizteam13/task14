@@ -195,7 +195,7 @@ public class PrivacyFormBean extends FormBean{
 	public String getQ3_2_2g() {
 		return q3_2_2g;
 	}
-	public void setQ3_1_2g(String q3_2_2g) {
+	public void setQ3_2_2g(String q3_2_2g) {
 		this.q3_2_2g = q3_2_2g;
 	}
 	//

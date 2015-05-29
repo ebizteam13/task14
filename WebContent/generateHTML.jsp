@@ -22,10 +22,34 @@ function myFunction() {
 			$(anchorSelector).attr("href", url);
 		
 	}
+	
 
 	$(function () {
 		createDownloadLink("#export");
+		
 	});
+}
+$(document).ready(function() {
+	$('input:checkbox[name=optout]').click(createEmailLink);
+	
+	 
+});
+function createEmailLink(){
+	 var allVals = [];
+    $('input:checkbox[name=optout]:checked').each(function() {
+      allVals.push($(this).val());
+    });
+	
+	var url = "mailto:${item.q3_2_2g}?subject=Opt-out&body=I'd like to apply for opt-out for the following:%0D%0A%0D%0A";
+	for (var i=0; i<allVals.length; i++){
+		url+=allVals[i]+"%0D%0A";
+	}
+	url+="%0D%0Aname:"+ $("#name").val();
+	url+="%0D%0AAddress:"+ $("#address").val();
+	url+="%0D%0AAccount #:"+ $("#account").val();
+	
+	$("#email").attr("href", url);
+
 }
 </script>
 <meta charset="utf-8">
@@ -192,8 +216,74 @@ function myFunction() {
 										- our menu will prompt you through your choices.
 									</li>
 									<li>Online banking customers - log on to a secure session
-										at ${item.q3_2}, and choose Change Privacy Preferences under
+										at <a href="http://${item.q3_2}">${item.q3_2}</a>, and choose Change Privacy Preferences under
 										the Account Services tab.</li>
+									<c:if test="${item.q3_1_1g == \"Yes\"}">
+									
+									
+										<li>Send an Email to <a href="#" id="email" target="_top">${item.q3_2_2g}</a>, and our customer service will be happy to help you.</li>
+									<div class="checkbox">
+									
+									<c:if test="${item.q2_1_1 == \"Yes\"}">
+										<label for="checkboxes-0"> <input type="checkbox"
+											name="optout" class="optout"
+											value="Do not share my personal information for
+									your everyday business purposes."> Do not share my personal information for
+									your everyday business purposes.
+										</label>
+									
+									</c:if>
+									<c:if test="${item.q2_2_1 == \"Yes\"}">
+									<label for="checkboxes-0"> <input type="checkbox"
+											name="optout" class="optout"
+											value="Do not share my personal information for
+									your marketing purposes."> Do not share my personal information for
+									your marketing purposes.
+										</label>
+									</c:if>
+									<c:if test="${item.q2_3_2_1 == \"Yes\"}">
+									<label for="checkboxes-0"> <input type="checkbox"
+											name="optout" class="optout"
+											value="Do not share my personal information for your
+									joint marketing partners."> Do not share my personal information for your
+									joint marketing partners.
+										</label>
+									</c:if>
+									<c:if test="${item.q2_4_2_1_1 == \"Yes\"}">
+									<label for="checkboxes-0"> <input type="checkbox"
+											name="optout" class="optout"
+											value="Do not share my personal information for your
+									joint marketing partners."> Do not share my personal information for your
+									joint marketing partners.
+										</label>
+									</c:if>
+									<c:if test="${item.q2_4_2_2_1 == \"Yes\"}">
+									<label for="checkboxes-0"> <input type="checkbox"
+											name="optout" class="optout"
+											value="Do not share my personal information about creditworthiness for
+									your affiliates' everyday business purpose."> Do not share my personal information about creditworthiness for
+									your affiliates' everyday business purpose.
+										</label>
+									</c:if>
+									<c:if test="${item.q2_4_3_1 == \"Yes\"}">
+									<label for="checkboxes-0"> <input type="checkbox"
+											name="optout" class="optout"
+											value="Do not share my personal information for
+									your affiliates' marketing purpose."> Do not share my personal information for
+									your affiliates' marketing purpose.
+										</label>
+									</c:if>
+									<c:if test="${item.q2_5_1 == \"Yes\"}">
+									<label for="checkboxes-0"> <input type="checkbox"
+											name="optout" class="optout"
+											value="Do not share my personal information for nonaffiliates to market to them."> Do not share my personal information for nonaffiliates to market to them.
+										</label>
+									</c:if>
+									</div>
+									<p>Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="name" name="name" onchange="createEmailLink"></p>
+									<p>Address:&nbsp;&nbsp;&nbsp; <input type="text" id="address" name="address" onchange="createEmailLink"></p>
+									<p>Account #: <input type="text" id="account" name="account" onchange="createEmailLink"></p>
+									</c:if>
 								</ul>
 								<p>
 									<strong>Please note:</strong>
@@ -217,7 +307,7 @@ function myFunction() {
 										- our menu will guide you through your choices.
 									</li>
 									<li>Online banking customers - log on to a secure session
-										at ${item.q3_2}, and choose Change Privacy Preferences under
+										at <a href="http://${item.q3_2}">${item.q3_2}</a>, and choose Change Privacy Preferences under
 										the Account Services tab.</li>
 								</ul>
 								<p>
@@ -241,7 +331,7 @@ function myFunction() {
 										<br>
 								</strong></em></td>
 							<td headers="tbody_tr2_th1" rowspan="1">Call ${item.q3_4}
-								 or go to ${item.q3_5}
+								 or go to <a href="http://${item.q3_5}">${item.q3_5}</a>
 							</td>
 						</tr>
 					</tbody>
